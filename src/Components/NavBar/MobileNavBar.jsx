@@ -9,9 +9,9 @@ function MobileNavBar(props) {
     const navigate = useNavigate();
 
     const Goto = () => {
-        const section = document.querySelector('#Service');
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        //    window.scrollTo({top:850,left:0,behavior:"smooth"})
+        // e.preventDefault();
+        // const section = document.querySelector('#Service');
+        // section.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
 
     const GotoProjectIdea = () => {

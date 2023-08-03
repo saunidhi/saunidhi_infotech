@@ -57,7 +57,7 @@ function Bottom() {
           <span className='text-[25px] md:text-[30px]'>Company</span>
           <Link to="about" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>About us</Link>
           <Link to="contect" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>How we Work</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Careers</Link>
+          <Link to="careers" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Careers</Link>
           <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Blog</Link>
           <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>News</Link>
           <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Partnership</Link>

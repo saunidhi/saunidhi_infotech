@@ -1,8 +1,20 @@
 import React from 'react'
 import AboutUsBgImg from './AboutUsBgImg.png';
 import AboutInfo from './AboutInfo';
+import { Context } from '../../Utils/Context'
+import { useContext } from 'react'
+import { useEffect } from 'react';
+
 
 function AboutUs() {
+  const { About, AboutPageData } = useContext(Context);
+  const BaseApi = About?.data[0]?.attributes;
+  console.log(BaseApi?.Heading_2);
+
+  useEffect(() => {
+    AboutPageData();
+  }, []);
+
   return (
     <>
       {/* Navbar Background color */}
@@ -14,13 +26,13 @@ function AboutUs() {
         <div style={{ backgroundImage: `url(${AboutUsBgImg})`, backgroundRepeat: 'no-repeat', backgroundSize: '101% 100%' }}>
 
           <div className=' h-[60vh] flex flex-col justify-center px-4 gap-6 md:mx-20 '>
-            <div className="text-xl md:text-2xl text-white uppercase">About</div>
-            <div className='text-3xl sm:w-[554px] md:text-4xl text-white '>Our micro-vertical industry functionality unleashes the power of Saunidhi InfoTech faster</div>
+            <div className="text-xl md:text-2xl text-white uppercase">{BaseApi?.Heading_1}</div>
+            <div className='text-3xl sm:w-[554px] md:text-4xl text-white '>{BaseApi?.Heading_2}</div>
           </div>
         </div>
       </div>
       <div>
-        <AboutInfo/>
+        <AboutInfo />
       </div>
     </>
   )

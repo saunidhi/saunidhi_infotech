@@ -9,6 +9,7 @@ import AboutUs from './Components/Pages/AboutUs/AboutUs.jsx'
 import BlogMain from './Components/Blog/BlogMain.jsx';
 import AppContext from './Components/Utils/Context.js';
 import PortFolio from './Components/Pages/PortFolio/PortFolio.jsx';
+import Career from './Components/Pages/Careers/Career.jsx';
 
 export default function App() {
   return (
@@ -21,7 +22,8 @@ export default function App() {
             <Route path="contect" element={<ContectUs />} />
             <Route path="about" element={<AboutUs />} />
             <Route path="blog" element={<BlogMain />} />
-            <Route path="portfolio" element={< PortFolio/>} />
+            <Route path="portfolio" element={< PortFolio />} />
+            <Route path="careers" element={<Career />} />
             <Route path="*" element={<PageNoteFound />} />
           </Routes>
           <MainFooter />

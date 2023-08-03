@@ -17,9 +17,10 @@ function NavBar() {
     }
 
     // this method for only Bottom to top scrolling 
-    const GotoService = () => {
-        const section = document.querySelector('#Service');
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const GotoService = (e) => {
+        e.preventDefault(e);
+        // const section = document.querySelector('#Service');
+        e.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     const GotoProjectIdea = () => {
