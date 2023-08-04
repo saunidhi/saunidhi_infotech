@@ -1,5 +1,4 @@
 import { createContext, useState } from "react";
-
 export const Context = createContext();
 
 const AppContext = (props) => {
@@ -9,11 +8,8 @@ const AppContext = (props) => {
     const [setData] = useState(FrontPageContent)
     const [About, setAbout] = useState()
 
-    // console.log(process.env.BASE_URL);
-
     const AboutPageData = async () => {
         const data = await fetch('https://saunidhi-server0.onrender.com/api/about-uses');
-
         if (data.status === 200) {
             setAbout(await data.json());
         }

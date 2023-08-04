@@ -1,11 +1,10 @@
 import React from 'react'
 import CareerBgImg from './CareerBgImg.jpg'
-import TeamImg from './TeamImg.png'
 import WorkCard from './WorkCard'
 import WorkSubCard from './WorkSubCard'
 import Cumm from './Cumm.png'
 import Question from './Question.png'
-// import Slider from './Slider'
+import Crausal from './Crausal'
 
 function Career() {
     const Goto = () => {
@@ -17,14 +16,6 @@ function Career() {
         FontStyle: ' normal',
         FontWeight: '400',
         LineHeight: ' 32px'
-    }
-
-    const Mystyle2 = {
-        FontFamily: 'Source Sans Pro',
-        FontSize: '20px',
-        FontStyle: 'normal',
-        FontWeight: '400',
-        LineHeight: '32px' /* 160% */
     }
 
     return (
@@ -50,11 +41,13 @@ function Career() {
 
             <div className="bg-[#138AA4] w-[100%] h-14 flex justify-center items-center text-white">Search for open positions</div>
 
+
+
             <div className='bg-white text-xl h-[5rem] w-[100%] flex justify-center items-center'>
                 <WorkCard text={" Why Work at Saunidhi InfoTech"} />
             </div>
 
-        {/* work 4 card of saunidhi infotech */}
+            {/* work 4 card of saunidhi infotech */}
             <div className='flex flex-wrap p-5 gap-3 justify-around sm:gap-0 sm:justify-evenly md:flex-nowrap md:gap-0'>
                 <WorkSubCard title="Align your strengths" para="Every passionate employee is unique and we align work to their strengths. We thrive on diversity, hire for originality, and welcome you as an individual." />
                 <WorkSubCard title="Invested people" para="We serve each other with respect and support each other to help you belong, with inclusive outreach programs for underserved communities." />
@@ -66,19 +59,8 @@ function Career() {
             <div className='bg-white text-xl h-[5rem] w-[100%] flex justify-center items-center '>
                 <WorkCard text={" Find your team"} />
             </div>
-
-            {/* Crousal */}
-            <div className='flex flex-wrap w-[90%] h-[30rem] shadow-md shadow-gray-600 my-5 mx-auto sm:h-fit md:flex-nowrap md:h-[100%]'>
-                <div className='md:h-[100%]' style={{ width: '100%' }}>
-                    <img  className='' style={{ width: '100%' }} src={TeamImg} alt="TeamImg" />
-                </div>
-                <div className="flex flex-col p-5 gap-2">
-                    <span style={Mystyle2}>OPEN POSITIONS</span>
-                    <span className='md:text-[28px]' style={Mystyle}>Sales & Marketing</span>
-                    <p style={Mystyle2}>Work in teams that inspire excellence, collaborating to ensure our customers have the world's most disruptive ERP solutions.</p>
-                    <span className='text-[#005CE6]'>Search Sales & Marketing opportunities today</span>
-                </div>
-            </div>
+          
+            <Crausal />
 
             <div className='flex flex-wrap my-4 gap-8 md:flex-nowrap sm:mt-[5rem]'>
                 {/* community */}
@@ -100,7 +82,6 @@ function Career() {
                 </div>
             </div>
 
-            {/* <Slider /> */}
             {/* sm:mb-[-7px]  */}
             <div onClick={Goto} className="sm:py-9 bg-[#138AA4] w-[100%] h-14 flex justify-center items-center text-white cursor-pointer ">Search for open positions</div>
         </>

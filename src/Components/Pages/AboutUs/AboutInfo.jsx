@@ -10,6 +10,8 @@ function AboutInfo() {
     const BaseApi = About?.data[0]?.attributes;
     // console.log(About?.data[0]?.attributes);
 
+    console.log(process.env.BASE_URL);
+    
     useEffect(() => {
         AboutPageData();
     }, []);
