@@ -1,5 +1,7 @@
 import { createContext, useState } from "react";
-export const Context = createContext();
+const newLocal = createContext();
+
+export const Context = newLocal;
 
 const AppContext = (props) => {
 
@@ -7,6 +9,15 @@ const AppContext = (props) => {
 
     const [setData] = useState(FrontPageContent)
     const [About, setAbout] = useState()
+    const [HomePage, setHomePage] = useState()
+    const [ContactData, setContactContent] = useState();
+
+    const HomePageData = async () => {
+        const data = await fetch('https://saunidhi-server0.onrender.com/api/home-page');
+        if (data.status === 200) {
+            setHomePage(await data.json());
+        }
+    }
 
     const AboutPageData = async () => {
         const data = await fetch('https://saunidhi-server0.onrender.com/api/about-uses');
@@ -15,7 +26,14 @@ const AppContext = (props) => {
         }
     }
 
-    return (<Context.Provider value={{ setData, About, AboutPageData }}>
+    const ContactContent = async () => {
+        const data = await fetch('https://saunidhi-server0.onrender.com/api/contect-us-contents');
+        if (data.status === 200) {
+            setContactContent(await data.json());
+        }
+    }
+
+    return (<Context.Provider value={{ setData, HomePage, HomePageData, About, AboutPageData, ContactContent, ContactData }}>
         {props.children}
     </Context.Provider>
     );

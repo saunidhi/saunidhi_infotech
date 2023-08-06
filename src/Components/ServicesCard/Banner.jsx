@@ -47,7 +47,7 @@ function Banner() {
 
     return (
         <>
-            <div className="h-[100%] flex flex-wrap justify-around sm:h-[100%] sm:justify-between  xl:h-[100%px] xl:w-[100%] xl:justify-between" style={{ backgroundImage: `url(${serviceImg})` }}>
+            <div className="h-[100%] flex flex-wrap gap-2 py-5 justify-around sm:h-max sm:justify-between sm:gap-2 sm:px-4 xl:flex-nowrap md:flex-nowrap md:py-0 md:pt-10 md:h-max xl:h-max xl:w-[100%] xl:justify-between xl:pt-6" style={{ backgroundImage: `url(${serviceImg})` }}>
                 {myData.map((item) => <Card key={item.id} Title={item.CardTitle} info={item.CardData} />)}
             </div>
         </>

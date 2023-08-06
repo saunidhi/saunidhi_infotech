@@ -11,7 +11,8 @@ function Bottom() {
 
   return (
     <>
-      <div className="bg-black text-white  h-[100%] flex justify-between flex-wrap sm:rounded-t-2xl sm:px-3 xl:pt-7 xl:h-[100%]" >
+      <div className="bg-black text-white h-[100%] flex justify-between flex-wrap sm:rounded-t-2xl sm:px-3 sm:h-[100%] md:h-[100%] xl:pt-7 xl:h-[40rem]" >
+
         <div className="Service-col ml-4  my-2 xl:w-[270px] xl:h-[554px] flex flex-col">
           <span className='text-[25px] md:text-[30px] '>Services</span>
           <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Website Designing</Link>

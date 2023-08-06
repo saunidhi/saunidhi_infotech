@@ -1,6 +1,7 @@
 import React from 'react'
 import AboutUsBgImg from './AboutUsBgImg.png';
 import AboutInfo from './AboutInfo';
+import FirstFooter from '../../Footer/FirstFooter';
 import { Context } from '../../Utils/Context'
 import { useContext } from 'react'
 import { useEffect } from 'react';
@@ -9,7 +10,6 @@ import { useEffect } from 'react';
 function AboutUs() {
   const { About, AboutPageData } = useContext(Context);
   const BaseApi = About?.data[0]?.attributes;
-  console.log(BaseApi?.Heading_2);
 
   useEffect(() => {
     AboutPageData();
@@ -34,6 +34,7 @@ function AboutUs() {
       <div>
         <AboutInfo />
       </div>
+      {/* <FirstFooter /> */}
     </>
   )
 }

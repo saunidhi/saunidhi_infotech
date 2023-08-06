@@ -19,7 +19,7 @@ function Crausal() {
         FontSize: '20px',
         FontStyle: 'normal',
         FontWeight: '400',
-        LineHeight: '32px' /* 160% */
+        LineHeight: '32px'
     }
 
     var settings = {
@@ -29,6 +29,7 @@ function Crausal() {
         slidesToShow: 1,
         slidesToScroll: 1
     };
+    
     return (
         <Slider {...settings}>
             <div>

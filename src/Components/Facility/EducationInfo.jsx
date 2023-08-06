@@ -9,20 +9,20 @@ import Sketch_Logo from '../Assets/Sketch_Logo.svg'
 function EducationInfo() {
     return (
         <>
-            <div className="Some-Info mt-3 bg-white xl:h-[100vh] xl:mt-5 mx-auto flex flex-col">
-                <div className="text-[28px] px-1 xl:text-[48px] xl:w-[879px] bg mx-auto " style={{ color: "#000", fontFamily: "Times Georgia, serif", fontStyle: "normal", fontWeight: "500", lineHeight: " normal" }}>
+            <div className="Some-Info mt-3 bg-white h-fit py-5 sm:h-[30rem] md:h-fit xl:h-[50rem] xl:mt-5 mx-auto flex flex-col">
+                <div className="text-[28px] px-1 xl:text-[48px] xl:w-[879px] mx-auto sm:w-[500px]" style={{ color: "#000", fontFamily: "Times Georgia, serif", fontStyle: "normal", fontWeight: "500", lineHeight: " normal" }}>
                     Software Development Platforms,
                     Technologies & Languages
                 </div>
 
-                <div className="text-[18px] px-1  xl:text-[32px] xl:w-[879px] mx-auto" style={{ color: "#000", fontFamily: "Times Georgia, serif", fontStyle: "normal", fontWeight: "500", lineHeight: " normal" }}>
+                <div className="text-[18px] px-1 sm:w-[500px] sm:py-2 xl:text-[32px] xl:w-[879px] mx-auto" style={{ color: "#000", fontFamily: "Times Georgia, serif", fontStyle: "normal", fontWeight: "500", lineHeight: " normal" }}>
                     Create exceptional customer experiences & drive meaningful
                     insights guided by the best app development practices and
                     technology trends in the digital world.
                 </div>
 
                 <div className="Container flex flex-wrap xl:flex-nowrap mt-3 md:mx-[212px] ">
-                    <div className="left-side-card xl:text-[32px] xl:w-[30%] xl:h[100%] flex flex-col p-1 m-4" style={{ color: "#000", fontFamily: "Arial", fontStyle: "normal", fontWeight: "500", lineHeight: " normal" }}>
+                    <div className="left-side-card xl:text-[32px] xl:w-[30%] xl:h[100%] flex flex-col xl:gap-2 p-1 m-4" style={{ color: "#000", fontFamily: "Arial", fontStyle: "normal", fontWeight: "500", lineHeight: " normal" }}>
                         <a href="" className='uppercase'>MOBILE</a>
                         <a href="" className='uppercase'>FRONTEND</a>
                         <a href="" className='uppercase'>BACKEND</a>

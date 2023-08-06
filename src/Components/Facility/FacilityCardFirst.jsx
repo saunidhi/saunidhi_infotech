@@ -12,7 +12,7 @@ import AiLot from '../Assets/AiLot.png'
 function FacilityCardFirst() {
     return (
         <>
-            <div className="Bgimge py-14 sm:h-[150vh] xl:py-1 xl:h-[100vh] bg-no-repeat " style={{ backgroundImage: `url(${CoverImg}) ` }}>
+            <div className="Bgimge py-14 sm:h-[50rem]  md:h-[50rem] xl:h-[50rem] xl:py-1 bg-no-repeat " style={{ backgroundImage: `url(${CoverImg}) ` }}>
                 {/* facility cards */}
                 <div className="container flex flex-wrap flex-row-reverse gap-10 w-[90%] sm:flex sm:flex-wrap sm:flex-row-reverse sm:mx-auto md:mx-auto xl:w-[100%] xl:gap-20 xl:p-16 xl:flex xl:flex-wrap xl:flex-row-reverse">
                     <Card image={SettingIcon} title={"Automotive"} />

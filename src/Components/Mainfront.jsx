@@ -8,7 +8,7 @@ function Mainfront() {
 
   return (
     <>
-      <div className="Bgimge h-[100vh] sm:h-[100vh]  md:h-[100%] xl:h-[100vh] bg-no-repeat image" style={{ backgroundImage: `url(${BgImg})` }}>
+      <div className="h-[100vh] sm:h-[50rem]  md:h-[50rem] xl:h-[50rem] bg-no-repeat image bg-blue-600" style={{ backgroundImage: `url(${BgImg})` }}>
         <div className="Information text-white ml-3 w-[80%] sm:top-[5rem] sm:mx-[5rem] sm:w-[50%] sm:h-[100vh] md:w-[%]  xl:top-[10rem] xl:mx-[8rem]  relative xl:w-[40%] top-20 px-3">
           <p className=" heading font-semibold " style={{ fontFamily: "arial", fontStyle: "normal", fontWeight: "550", lineHeight: " normal" }} >
             <div className=" text-[40px] sm:text-4xl md:text-6xl xl:text-7xl " >Business automation</div>
