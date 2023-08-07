@@ -16,7 +16,7 @@ function ContectUsInfo() {
       <div className="flex flex-col px-4 md:h-[55rem] md:justify-between md:px-11 ">
         <div className='flex flex-col'>
 
-          <div className="text-[16px] py-2">{BaseAPi?.Paragraph}</div>
+          <div className="text-[18px] py-2">{BaseAPi?.Paragraph}</div>
 
           <h1 className=" text-2xl py-2">{BaseAPi?.Heading_2}</h1>
 

@@ -31,7 +31,7 @@ function Bottom() {
           <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>NFT </Link>
           <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>AI</Link>
           <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>loT</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Healthcare</Link>
+          <Link to="Healthcare" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Healthcare</Link>
           <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Cannabis</Link>
           <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Automotive</Link>
           <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Real estate</Link>

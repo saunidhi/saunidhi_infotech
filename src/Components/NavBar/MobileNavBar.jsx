@@ -36,11 +36,11 @@ function MobileNavBar(props) {
 
                         <Link to="portfolio" className="Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">PORTFOLIO</Link>
 
-                        <Link className="Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">COMPANY</Link>
+                        <Link to="about" className="Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">ABOUT US</Link>
 
                         <Link to="blog" className="Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">BLOG</Link>
 
-                        <Link to="contect" className="Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">CONTECT US</Link>
+                        <Link to="contact" className="Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">CONTACT US</Link>
                     </div>
                 </div>
             </div>

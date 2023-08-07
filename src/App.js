@@ -10,6 +10,7 @@ import BlogMain from './Components/Blog/BlogMain.jsx';
 import AppContext from './Components/Utils/Context.js';
 import PortFolio from './Components/Pages/PortFolio/PortFolio.jsx';
 import Career from './Components/Pages/Careers/Career.jsx';
+import Healthcare from './Components/Pages/Healthcare/Healthcare.jsx';
 
 export default function App() {
   return (
@@ -18,12 +19,14 @@ export default function App() {
         <AppContext>
           <NavBar />
           <Routes>
+            
             <Route path="/" element={<Home />} />
-            <Route path="contect" element={<ContectUs />} />
+            <Route path="contact" element={<ContectUs />} />
             <Route path="about" element={<AboutUs />} />
             <Route path="blog" element={<BlogMain />} />
             <Route path="portfolio" element={< PortFolio />} />
             <Route path="careers" element={<Career />} />
+            <Route path="Healthcare" element={<Healthcare/>} />
             <Route path="*" element={<PageNoteFound />} />
           </Routes>
           <MainFooter />

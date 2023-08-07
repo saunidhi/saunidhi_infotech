@@ -7,29 +7,29 @@ function ContectUsForm() {
 
         <span className='uppercase text-2xl py-3 md:mx-8'>Contact Us</span>
 
-        <p className='md:w-[80%] md:px-8'>Please fill out your information below and an Saunidhi InfoTech Customer Representative will contact you shortly.</p>
+        <p className='md:w-[80%] md:px-8 text-[12px]'>Please fill out your information below and an Saunidhi InfoTech Customer Representative will contact you shortly.</p>
 
         <span className=' md:mx-8 text-red-500'>* is required for submission</span>
 
         <form action="" className='flex flex-col gap-1 md:mx-auto'>
-          <span>First Name</span>
+          <span>First Name *</span>
           <input required className='w-[100%] h-[40px] border-2 border-gray-200  rounded-md pl-2 md:w-[400px]' type="text" />
-          <span>Last Name</span>
+          <span>Last Name *</span>
           <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' type="text" />
-          <span>Business Email Address</span>
+          <span>Business Email Address *</span>
+          <input type="email" required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' />
+          <span>Phone Number *</span>
+          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' type="text" minLength="9" maxLength="10" size="10" />
+          <span>Company Name *</span>
           <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' type="text" />
-          <span>Phone Number</span>
-          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' type="text" />
-          <span>Company Name</span>
-          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' type="text" />
-          <span>Industry</span>
+          <span>Industry *</span>
           <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' type="text" />
           <span>What would you like to discuss?</span>
-          <textarea required className='w-[100%] h-[100px] border-2 border-gray-200 rounded-md pl-2 md:h-[130px] md:w-[400px]' type="text" />
+          <textarea className='w-[100%] h-[100px] border-2 border-gray-200 rounded-md pl-2 md:h-[130px] md:w-[400px]' type="text" />
           <div className='flex mt-6 text-white bg-blue-700 w-[100px] h-10 justify-center items-center rounded-lg hover:bg-blue-900 cursor-pointer'>Submit</div>
         </form>
 
-        <p className='pt-3 text-[15px] pb-5'>By clicking “Submit” you agree that Saunidhi InfoTech will process your personal data provided in the above form for communicating with you as our potential or actual customer or a client as described in our.</p>
+        <p className='pt-3 text-[12px] pb-5'>By clicking “Submit” you agree that Saunidhi InfoTech will process your personal data provided in the above form for communicating with you as our potential or actual customer or a client as described in our.</p>
 
       </div>
     </>
