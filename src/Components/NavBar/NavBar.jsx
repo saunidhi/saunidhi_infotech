@@ -52,11 +52,13 @@ function NavBar() {
 
                     <Link to="/" onClick={GotoProjectIdea} className="solution sm:px-2 md:w-[100px] md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2 cursor-pointer">solution</Link>
 
-                    <Link to="portfolio" className="portfolio sm:px-2 md:w-[100px] md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2  cursor-pointer">portfolio</Link>
+                    {/*Portfolio hidden */}
+                    <Link to="portfolio" className="hidden portfolio sm:px-2 md:w-[100px] md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2  cursor-pointer">portfolio</Link>
 
                     <Link to="about" className="company sm:px-2 md:px-3 md:w-[100px] md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2 cursor-pointer">About us</Link>
-
-                    <Link to="blog"  className="blog sm:px-1 md:w-[100px] md:text-base xl:px-2 xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-1 cursor-pointer">blog</Link>
+                    
+                    {/*Blog hidden */}
+                    <Link to="blog"  className="hidden blog sm:px-1 md:w-[100px] md:text-base xl:px-2 xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-1 cursor-pointer">blog</Link>
 
                     <Link to="contact" className="contact sm:px-2 md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2  cursor-pointer">contact us</Link>
                 </div>

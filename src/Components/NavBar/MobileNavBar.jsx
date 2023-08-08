@@ -1,17 +1,19 @@
 import React from 'react'
 import { FaWindowClose } from "react-icons/fa";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+
 
 
 function MobileNavBar(props) {
 
     // eslint-disable-next-line
-    const navigate = useNavigate();
+    let location = useLocation();
 
-    const Goto = () => {
-        // e.preventDefault();
-        // const section = document.querySelector('#Service');
-        // section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    const Goto = (paths) => {
+        if (location.pathname ==="/") {
+            const section = document.querySelector('#Service');
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
     }
 
     const GotoProjectIdea = () => {

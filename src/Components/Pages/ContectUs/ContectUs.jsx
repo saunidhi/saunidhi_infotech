@@ -4,13 +4,13 @@ import ContectUsInfo from './ContectUsInfo'
 import ContectUsForm from './ContectUsForm'
 import { Context } from '../../Utils/Context'
 
-
 function ContectUs() {
 
     const { ContactContent, ContactData } = useContext(Context);
     const BaseAPi = ContactData?.data[0]?.attributes;
 
     useEffect(() => {
+        
         ContactContent();
     }, []);
 

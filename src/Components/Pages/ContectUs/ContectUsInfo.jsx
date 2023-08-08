@@ -32,7 +32,7 @@ function ContectUsInfo() {
           <span>User groups are run and managed independently <br /> from Saunidhi InfoTech.</span>
           <div className="flex">
             <span>Email:-</span>
-            <Link to="mailto:Support@saunidhiinfotech.com" className='text-blue-500 cursor-pointer'>{BaseAPi?.Email}</Link>
+            <Link to={`mailto:${BaseAPi?.Email}`} className='text-blue-500 cursor-pointer'>{BaseAPi?.Email}</Link>
           </div>
         </div>
       </div>

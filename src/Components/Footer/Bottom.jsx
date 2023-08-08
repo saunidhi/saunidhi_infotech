@@ -15,29 +15,29 @@ function Bottom() {
 
         <div className="Service-col ml-4  my-2 xl:w-[270px] xl:h-[554px] flex flex-col">
           <span className='text-[25px] md:text-[30px] '>Services</span>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Website Designing</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Web Hosting</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Dapp development</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Integrations</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Android App Development</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Digital Marketing</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Social Media Marketing</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Social Media Marketing</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Smart contracts</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>E - Sports Tournaments</Link>
+          <Link to="/contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Website Designing</Link>
+          <Link to="/contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Web Hosting</Link>
+          <Link to="/contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Dapp development</Link>
+          <Link to="/contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Integrations</Link>
+          <Link to="/contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Android App Development</Link>
+          <Link to="/contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Digital Marketing</Link>
+          <Link to="/contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Social Media Marketing</Link>
+          <Link to="/contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Social Media Marketing</Link>
+          <Link to="/contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>Smart contracts</Link>
+          <Link to="/contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 ms:mx-4 md:cursor-pointer md:mt-5 '>E - Sports Tournaments</Link>
         </div>
         <div className="Solutions-col mr-4 xl:w-[250px] xl:h-[554px] my-2 flex flex-col">
           <span className='text-[25px] md:text-[30px]'>Solutions</span>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>NFT </Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>AI</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>loT</Link>
+          <Link to="contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>NFT </Link>
+          <Link to="contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>AI</Link>
+          <Link to="contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>loT</Link>
           <Link to="Healthcare" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Healthcare</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Cannabis</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Automotive</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Real estate</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Insurance</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Loyalty programs</Link>
-          <Link to="" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Logistics</Link>
+          <Link to="contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Cannabis</Link>
+          <Link to="contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Automotive</Link>
+          <Link to="contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Real estate</Link>
+          <Link to="contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Insurance</Link>
+          <Link to="contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Loyalty programs</Link>
+          <Link to="contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Logistics</Link>
 
         </div>
         <div className="Technologies-col ml-4 xl:w-[250px] xl:h-[554px] my-2 flex flex-col">
