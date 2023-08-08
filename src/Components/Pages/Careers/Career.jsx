@@ -59,8 +59,11 @@ function Career() {
             <div className='bg-white text-xl h-[5rem] w-[100%] flex justify-center items-center '>
                 <WorkCard text={" Find your team"} />
             </div>
-          
-            <Crausal />
+
+            {/* This is a crausal */}
+            <div className='w-[95%] mx-auto mb-10 sm:mb-0'>
+                <Crausal />
+            </div>
 
             <div className='flex flex-wrap my-4 gap-8 md:flex-nowrap sm:mt-[5rem]'>
                 {/* community */}

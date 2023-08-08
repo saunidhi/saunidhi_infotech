@@ -2,9 +2,11 @@ import amiInfotech from '../Assets/amiInfotech.png'
 import { BsList } from "@react-icons/all-files/bs/BsList";
 import MobileNavBar from './MobileNavBar';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function NavBar() {
+    let location = useLocation();
+
     const [ShowSideBar, setSideBar] = useState(false);
 
     const Toggle = () => {
@@ -17,15 +19,18 @@ function NavBar() {
     }
 
     // this method for only Bottom to top scrolling 
-    const GotoService = (e) => {
-        e.preventDefault(e);
-        // const section = document.querySelector('#Service');
-        e.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const GotoService = () => {
+        if (location.pathname === "/") {
+            const section = document.querySelector('#Service');
+            section.scrollIntoView({ behavior: 'auto', block: 'start' })
+        }
     }
 
     const GotoProjectIdea = () => {
-        const section = document.querySelector('#ProjectIdea');
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (location.pathname === "/") {
+            const section = document.querySelector('#ProjectIdea');
+            section.scrollIntoView({ behavior: 'auto', block: 'start' });
+        }
     }
 
     return (

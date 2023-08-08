@@ -10,15 +10,19 @@ function MobileNavBar(props) {
     let location = useLocation();
 
     const Goto = (paths) => {
-        if (location.pathname ==="/") {
+        if (location.pathname === "/") {
+            props.Toggle();
             const section = document.querySelector('#Service');
             section.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }
     }
 
     const GotoProjectIdea = () => {
-        const section = document.querySelector('#ProjectIdea');
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (location.pathname === "/") {
+            props.Toggle();
+            const section = document.querySelector('#ProjectIdea');
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
     }
 
     return (
@@ -36,13 +40,15 @@ function MobileNavBar(props) {
                         <Link onClick={GotoProjectIdea} className="Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white 
                         rounded-2xl text-center">SOLUTION</Link>
 
-                        <Link to="portfolio" className="Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">PORTFOLIO</Link>
+                        {/* this is disable for some time */}
+                        <Link to="" onClick={props.Toggle} className="hidden Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">PORTFOLIO</Link>
 
-                        <Link to="about" className="Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">ABOUT US</Link>
+                        <Link to="about" onClick={props.Toggle} className="Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">ABOUT US</Link>
+                        
+                        {/* this is disable for some time */}
+                        <Link to="" className="hidden Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">BLOG</Link>
 
-                        <Link to="blog" className="Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">BLOG</Link>
-
-                        <Link to="contact" className="Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">CONTACT US</Link>
+                        <Link to="contact" onClick={props.Toggle} className="Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">CONTACT US</Link>
                     </div>
                 </div>
             </div>

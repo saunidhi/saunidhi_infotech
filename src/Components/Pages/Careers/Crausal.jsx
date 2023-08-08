@@ -27,14 +27,14 @@ function Crausal() {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll:1
     };
     
     return (
         <Slider {...settings}>
             <div>
                 {/* Crousal */}
-                <div className='flex flex-wrap w-[90%] h-[30rem] shadow-md shadow-gray-600 my-5 mx-auto sm:h-fit md:flex-nowrap md:h-[100%]'>
+                <div className='flex flex-wrap  w-[90%] h-[30rem] shadow-md shadow-gray-600 my-5 mx-auto sm:h-fit md:flex-nowrap md:h-[100%]'>
                     <div className='md:h-[100%]' style={{ width: '100%' }}>
                         <img className='' style={{ width: '100%' }} src={TeamImg} alt="TeamImg" />
                     </div>

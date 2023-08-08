@@ -11,7 +11,7 @@ function FirstFooter() {
 
     return (
         <>
-            <div className="bg-slate-800 text-white list-none p-3 sm:flex sm:items-center sm:text-[15px] sm:gap-3 md:h-[5rem] md:text-[20px]" style={MyStyle}>
+            <div className="bg-black text-white list-none p-3 sm:flex sm:items-center sm:text-[15px] sm:gap-3 md:h-[5rem] md:text-[20px] border-b-2" style={MyStyle}>
                 <li>Industries</li>
                 <li>Products</li>
                 <li>Solutions</li>

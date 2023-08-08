@@ -1,7 +1,6 @@
 import React from 'react'
 import AboutUsBgImg from './AboutUsBgImg.png';
 import AboutInfo from './AboutInfo';
-import FirstFooter from '../../Footer/FirstFooter';
 import { Context } from '../../Utils/Context'
 import { useContext } from 'react'
 import { useEffect } from 'react';
@@ -34,7 +33,6 @@ function AboutUs() {
       <div>
         <AboutInfo />
       </div>
-      {/* <FirstFooter /> */}
     </>
   )
 }
