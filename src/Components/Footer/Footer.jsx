@@ -1,5 +1,6 @@
 import React from 'react'
-import { LiaLinkedinIn, LiaTwitter, LiaInstagram ,LiaFacebook,LiaYoutube} from "react-icons/lia";
+import { LiaLinkedinIn, LiaTwitter, LiaInstagram, LiaFacebook, LiaYoutube } from "react-icons/lia";
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -8,12 +9,12 @@ function Footer() {
                 <span className='flex items-center justify-center '>
                     <span className='uppercase text-xs xl:text-base'>© Copyright 2023. Saunidhi InfoTech. All rights reserved</span>
                 </span>
-                <span className='uppercase text-xs flex flex-wrap sm:flex-nowrap justify-center items-center gap-2'>
-                    <div className="icons flex  my-1">
-                        <LiaInstagram size={30} />
-                        <LiaTwitter size={30} />
-                        <LiaFacebook size={30} />
-                        <LiaLinkedinIn size={30} />
+                <span className='uppercase text-xs flex flex-wrap sm:flex-nowrap justify-center items-center gap-4 md:mx-[40px]'>
+                    <div className="icons flex my-1">
+                        <Link > <LiaInstagram size={30} /></Link>
+                        <Link to="https://twitter.com/saunidhi46598"> <LiaTwitter size={30} /></Link>
+                        <Link to="https://www.facebook.com/profile.php?id=100094149437188"> <LiaFacebook size={30} /></Link>
+                        <Link to="https://www.linkedin.com/in/saunidhi-infotech-34b07b282/"> <LiaLinkedinIn size={30} /></Link>
                         {/* <LiaYoutube size={30} /> */}
                     </div>
                 </span>

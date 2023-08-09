@@ -8,7 +8,7 @@ function projectIdeaForm() {
 
     const CheckBox = () => {
         const element = document.getElementById("checkbox").value;
-        console.log(element);
+        // console.log(element);
     }
 
     return (

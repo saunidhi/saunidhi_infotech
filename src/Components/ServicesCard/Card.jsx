@@ -22,6 +22,7 @@ function Card(props) {
                             {props.info[5]} <br />
                             {props.info[6]} <br />
                             {props.info[7]} <br />
+                            {props.info[8]} <br />
                         </div>
                     }
 

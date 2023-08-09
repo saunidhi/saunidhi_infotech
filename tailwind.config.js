@@ -11,6 +11,9 @@ module.exports = {
         'custom-height-mq': { 'raw': '((min-width: 1024px) and (max-height: 830px))' },
       }
     },
+    variants: {
+      display:['group-hover']
+     }
   },
   plugins: [],
 }

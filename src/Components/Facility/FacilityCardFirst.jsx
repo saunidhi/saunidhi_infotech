@@ -19,7 +19,7 @@ function FacilityCardFirst() {
                     <Card image={truckIcons} title={"Logistics"} />
                     <Card image={education} title={"Education"} h={"144"} w={"300"} />
                     <Card image={emovebgPreview} title={"Healthcare"} h={14} w={30} />
-                    <Card image={parking} title={"LoT"} />
+                    <Card image={parking} title={"IOT"} />
                     <Card image={AiLot} title={"AI"} />
                     <Card className="p-3" image={GameIcon} title={"E - Sports Tournaments"} />
                 </div>

@@ -58,12 +58,11 @@ function Bottom() {
           <Link to="about" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>About us</Link>
           <Link to="contect" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>How we Work</Link>
           <Link to="careers" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Careers</Link>
-          
+
           {/* this is hidden to some time */}
           <Link to="" onClick={Goto} className='hidden text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Blog</Link>
           <Link to="contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>News</Link>
 
-          <Link to="contact" onClick={Goto} className='text-[15px] mt-2 md:text-[20px] md:gap-1 md:mx-4 md:cursor-pointer md:mt-5 '>Partnership</Link>
         </div>
       </div>
     </>

@@ -42,6 +42,17 @@ function Banner() {
                 "> web devlopment",
                 "> Web Hosting"
             ]
+        },
+        {
+            "id": 5,
+            "CardTitle": "HealthCare",
+            "CardData": [
+                "> Computation And Systems Biology",
+                "> AI based Health Care tools",
+                "> Biological Data Analysis",
+                "> Big Data Analysis",
+                "> Health Data Informatics",
+            ]
         }
     ];
 

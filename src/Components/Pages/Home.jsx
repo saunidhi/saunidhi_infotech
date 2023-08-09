@@ -18,7 +18,7 @@ function Home() {
                 <OurService />
             </div>
 
-            {/* there are 4 cards */}
+            {/* there are 5 cards */}
             <Banner />
 
             <ProjectIdeaCard />

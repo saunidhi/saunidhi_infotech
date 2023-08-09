@@ -10,7 +10,7 @@ function ContectUs() {
     const BaseAPi = ContactData?.data[0]?.attributes;
 
     useEffect(() => {
-        
+        // eslint-disable-next-line
         ContactContent();
     }, []);
 
@@ -22,10 +22,10 @@ function ContectUs() {
             {/* this tag for only image manage*/}
             <div className="h-[100%] bg-no-repeat w-[100%] md:h-[100%]">
                 <div style={{ backgroundImage: `url(${ContectUsBgImg})`, backgroundRepeat: 'no-repeat', backgroundSize: '101% 100%' }}>
-
                     <div className=' h-[60vh] flex flex-col justify-center px-4 gap-6 md:mx-20 '>
                         <div className="text-xl md:text-2xl text-white">{BaseAPi?.Titile}</div>
                         <div className='text-3xl md:text-4xl text-white'>{BaseAPi?.Heading_1}</div>
+                        <div className="text-[18px] py-2 text-white md:w-[40%]">{BaseAPi?.Paragraph}</div>
                     </div>
 
                 </div>
