@@ -13,19 +13,19 @@ function ContectUsForm() {
 
         <form action="" className='flex flex-col gap-1 md:mx-auto'>
           <span>First Name *</span>
-          <input required className='w-[100%] h-[40px] border-2 border-gray-200  rounded-md pl-2 md:w-[400px]' type="text" />
+          <input required className='w-[100%] h-[40px] border-2 border-gray-200  rounded-md pl-2 md:w-[400px]' name="first_name" type="text" />
           <span>Last Name *</span>
-          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' type="text" />
+          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' name="last_name" type="text" />
           <span>Business Email Address *</span>
           <input type="email" required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' />
           <span>Phone Number *</span>
-          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' type="text" minLength="9" maxLength="10" size="10" />
+          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' name="phone" type="text" minLength="9" maxLength="10" size="10" />
           <span>Company Name *</span>
-          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' type="text" />
+          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' name="company" type="text" />
           <span>Industry *</span>
-          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' type="text" />
+          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' name="industry" type="text" />
           <span>What would you like to discuss?</span>
-          <textarea className='w-[100%] h-[100px] border-2 border-gray-200 rounded-md pl-2 md:h-[130px] md:w-[400px]' type="text" />
+          <textarea className='w-[100%] h-[100px] border-2 border-gray-200 rounded-md pl-2 md:h-[130px] md:w-[400px]' name="desc" type="text" />
           <div className='flex mt-6 text-white bg-blue-700 w-[100px] h-10 justify-center items-center rounded-lg hover:bg-blue-900 cursor-pointer'>Submit</div>
         </form>
 

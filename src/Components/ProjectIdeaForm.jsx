@@ -7,7 +7,7 @@ function projectIdeaForm() {
     };
 
     const CheckBox = () => {
-        const element = document.getElementById("checkbox").value;
+        // const element = document.getElementById("checkbox").value;
         // console.log(element);
     }
 
@@ -54,8 +54,7 @@ function projectIdeaForm() {
 
                 <div className="terms flex mx-9 gap-2">
                     <input className='w-[30px] h-[30px] border-2 rounded-md mx-2' onClick={CheckBox} type="checkbox" name="" id="checkbox" />
-                    <p className='text-[14px] text-white'>i consent to Aetsoft JSC processing my personal information as set out in the Privacy Policy and Cookie Policy and
-                        that, given the global nature of Aetsoft JSC  business ,such processing may take place outside of my home jurisdiction.</p>
+                    <p className='text-[14px] text-white'>By proceeding, I confirm that the information provided by me here is accurate. I authorize Saunidhi Infotech and/or its authorized representatives to contact me for any queries. This will override registry on Do Not Disturb (DND)/National Do Not Call (NDNC) </p>
                 </div>
                 <div className="btn bg-black  w-[250px] h-[50px] rounded-3xl flex justify-center items-center mx-9 my-3 hover:bg-red-700 cursor-pointer" disabled>
                     GET A FREE CONSULTION
