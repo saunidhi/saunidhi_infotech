@@ -51,7 +51,7 @@ function NavBar() {
 
     return (
         <>
-            <header className={`items-center ${scrolled ? " sticky bg-violet-950 z-30" : "absolute"} bg-transparent  top-0 z-[1] w-[100%] justify-around text-white flex  xl:h-[7rem]`}>
+            <header className={`items-center ${scrolled ? " sticky bg-violet-950 z-40" : "absolute"} bg-transparent  top-0 z-[1] w-[100%] justify-around text-white flex  xl:h-[7rem]`}>
                 <div className="logo flex items-center ">
 
                     <div className="logo xl:w-[58px] xl:h-[100%] flex items-center ">
