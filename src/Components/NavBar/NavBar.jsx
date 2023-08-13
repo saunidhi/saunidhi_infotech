@@ -18,6 +18,12 @@ function NavBar() {
         }
     }
 
+
+    // this method for only Bottom to top scrolling 
+    const Goto = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth", });
+    }
+
     // this method for only Bottom to top scrolling 
     const GotoService = () => {
         if (location.pathname === "/") {
@@ -44,7 +50,6 @@ function NavBar() {
         else { setScrolled(false); }
     }
 
-
     useEffect(() => {
         window.addEventListener("scroll", hendleScroll);
     }, []);
@@ -67,11 +72,20 @@ function NavBar() {
                 </div>
                 <div className="sm:hidden xl:hidden items-center hover:bg-red-600 p-1" onClick={Toggle}> <BsList size={30} /></div>
 
-                <div className="hidden sm:flex sm:text-[10px] propertes uppercase xl:flex items-center xl:text-[20px] text-center font-semi ">
+                {/* hover dropdown menu */}
+                
+                <div className="hidden sm:menu-hover sm:flex sm:text-[10px] propertes uppercase xl:flex items-center xl:text-[20px] text-center font-semi ">
+                    <Link to="/" onClick={GotoService}  >
+                        <div className="group relative menu-hover sm:px-2 md:w-[100px] md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2  cursor-pointer">
+                            <div >Services</div>
 
-                    <Link to="/" onClick={GotoService} className="Services sm:px-2 md:w-[100px] md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2 cursor-pointer">Services</Link>
+                            <div className="invisible my-2 absolute z-50 flex w-fit flex-col bg-gray-100 px-4 text-gray-800 shadow-xl group-hover:visible">
+                                <Link onClick={Goto} to="Healthcare" className=" block my-3 sm:text-[10px] md:text-base text-center ">HealthCare</Link >
+                            </div>
+                        </div>
+                    </Link>
 
-                    <Link to="/" onClick={GotoProjectIdea} className="solution sm:px-2 md:w-[100px] md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2 cursor-pointer">solution</Link>
+                    <Link to="/" onClick={GotoProjectIdea} className="solution sm:px-2 md:w-[100px] md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2  cursor-pointer">solution</Link>
 
                     {/*Portfolio hidden */}
                     <Link to="portfolio" className="hidden portfolio sm:px-2 md:w-[100px] md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2  cursor-pointer">portfolio</Link>
@@ -84,11 +98,10 @@ function NavBar() {
                     <Link to="contact" className="contact sm:px-2 md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2  cursor-pointer">contact us</Link>
                 </div>
             </header>
-            <div className="sm:hidden duration-150  fixed z-20 float-right ">
+            <div className={`sm:hidden duration-150  fixed z-20 float-right `}>
                 {ShowSideBar && <MobileNavBar Toggle={Toggle} />}
             </div>
         </>
-
     )
 }
 

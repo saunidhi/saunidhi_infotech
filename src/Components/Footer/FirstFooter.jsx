@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 function FirstFooter() {
     const MyStyle = {
@@ -9,16 +10,34 @@ function FirstFooter() {
         LineHeight: "31px"
     }
 
+    let location = useLocation();
+    const GotoProjectIdea = () => {
+        if (location.pathname === "/") {
+            const section = document.querySelector('#ProjectIdea');
+            section.scrollIntoView({ behavior: 'auto', block: 'start' });
+        }
+    }
+
+    // this method for only Bottom to top scrolling 
+    const GotoService = () => {
+        if (location.pathname === "/") {
+            const section = document.querySelector('#Service');
+            section.scrollIntoView({ behavior: 'auto', block: 'start' })
+        }
+    }
+
+    // this method for only Bottom to top scrolling 
+    const Goto = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth", });
+    }
+
     return (
         <>
             <div className="bg-black text-white list-none p-3 sm:flex sm:items-center sm:text-[15px] sm:gap-3 md:h-[5rem] md:text-[20px] border-b-2" style={MyStyle}>
-                <li>Industries</li>
-                <li>Products</li>
-                <li>Solutions</li>
-                <li>Platform</li>
-                <li>Services</li>
-                <li>Partners</li>
-                <li>About</li>
+                <Link onClick={Goto} to="/"><li>Home</li></Link>
+                <Link onClick={GotoProjectIdea} to="/"><li>Solutions</li></Link>
+                <Link onClick={GotoService} to="/"><li>Services</li></Link>
+                <Link onClick={Goto} to="/About"><li>About</li></Link>
             </div>
         </>
     )

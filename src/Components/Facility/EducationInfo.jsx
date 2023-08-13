@@ -5,6 +5,7 @@ import Adobe_After from '../Assets/Adobe_After.png'
 import Adobe_XD from '../Assets/Adobe_XD.png'
 import invision from '../Assets/invision.svg'
 import Sketch_Logo from '../Assets/Sketch_Logo.svg'
+import { Link } from 'react-router-dom'
 
 function EducationInfo() {
     return (
@@ -23,13 +24,13 @@ function EducationInfo() {
 
                 <div className="Container flex flex-wrap xl:flex-nowrap mt-3 md:mx-[212px] ">
                     <div className="left-side-card xl:text-[32px] xl:w-[30%] xl:h[100%] flex flex-col xl:gap-2 p-1 m-4" style={{ color: "#000", fontFamily: "Arial", fontStyle: "normal", fontWeight: "500", lineHeight: " normal" }}>
-                        <a href="" className='uppercase'>MOBILE</a>
-                        <a href="" className='uppercase'>FRONTEND</a>
-                        <a href="" className='uppercase'>BACKEND</a>
-                        <a href="" className='uppercase'>Data Analysis</a>
-                        <a href="" className='uppercase'>DATABASE</a>
-                        <a href="" className='uppercase'>INFRASTRUCTURE</a>
-                        <a href="" className='uppercase'>TESTING</a>
+                        <Link className='uppercase'>MOBILE</Link>
+                        <Link className='uppercase'>FRONTEND</Link>
+                        <Link className='uppercase'>BACKEND</Link>
+                        <Link className='uppercase'>Data Analysis</Link>
+                        <Link className='uppercase'>DATABASE</Link>
+                        <Link className='uppercase'>INFRASTRUCTURE</Link>
+                        <Link className='uppercase'>TESTING</Link>
                     </div>
                     <div className="right-side-card flex flex-wrap :flex-nowrap md:mt-14  w-[400px] xl:w-[100%] xl:h-[60%] ">
                         <div className="flex wrap justify-between px-5 gap-7">

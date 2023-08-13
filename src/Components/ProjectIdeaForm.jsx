@@ -22,31 +22,31 @@ function projectIdeaForm() {
                 <div className="form mt-6 flex flex-wrap md:flex-nowrap mx-5">
                     <div className="flex flex-wrap w-[700px] ">
 
-                        <div className="border-2 rounded-md border-white  bg-gray-700  xl:w-[310px] h-[52px] mx-4 my-3">
-                            <label className='absolute mx-3 my-[-13px] z-10 bg px-2' style={{ backgroundColor: "#313533", }}>Name</label>
+                        <div className="border-2 rounded-md border-white  bg-gray-700 xl:w-[310px] h-[52px] mx-4 my-3">
+                            <label className='absolute mx-3 my-[-13px] z-1 bg px-2' style={{ backgroundColor: "#313533", }}>Name</label>
                             <input className='w-[100%] h-[100%]  p-2' style={{ backgroundColor: "#313533", }} type="text" />
                         </div>
                         <div className="border-2 rounded-md border-white bg-white xl:w-[310px] h-[52px] mx-4 my-3 ">
-                            <label className='absolute mx-3 my-[-13px] z-10 bg px-2' style={{ backgroundColor: "#313533", }}>Phone</label>
+                            <label className='absolute mx-3 my-[-13px] z-1 bg px-2' style={{ backgroundColor: "#313533", }}>Phone</label>
                             <input className='w-[100%] h-[100%]  p-2' style={{ backgroundColor: "#313533", }} type="number" />
                         </div>
                         <div className="border-2 rounded-md border-white bg-white xl:w-[310px] h-[52px] mx-4 my-3">
-                            <label className='absolute mx-3 my-[-13px] z-10 bg px-2' style={{ backgroundColor: "#313533", }}>E-mail</label>
+                            <label className='absolute mx-3 my-[-13px] z-1 bg px-2' style={{ backgroundColor: "#313533", }}>E-mail</label>
                             <input className='w-[100%] h-[100%]  p-2' style={{ backgroundColor: "#313533", }} type="Email" />
                         </div>
                         <div className="border-2 rounded-md border-white bg-white xl:w-[310px] h-[52px] mx-4 my-3">
-                            <label className='absolute mx-3 my-[-13px] z-10 bg px-2' style={{ backgroundColor: "#313533", }}>Company</label>
+                            <label className='absolute mx-3 my-[-13px] z-1 bg px-2' style={{ backgroundColor: "#313533", }}>Company</label>
                             <input className='w-[100%] h-[100%]  p-2' style={{ backgroundColor: "#313533", }} type="text" />
                         </div>
                         <div className="border-2 rounded-md border-white  xl:w-[310px] h-[52px] mx-4 my-3">
-                            <label className='absolute mx-3 my-[-13px] z-10 bg px-2' style={{ backgroundColor: "#313533", }}>Linkedin-Telegram</label>
+                            <label className='absolute mx-3 my-[-13px] z-1 bg px-2' style={{ backgroundColor: "#313533", }}>Linkedin-Telegram</label>
                             <input className='w-[100%] h-[100%]  p-2' style={{ backgroundColor: "#313533", }} type="text" />
                         </div>
 
                     </div>
                     <div className="flex">
                         <div className="border-2 rounded-md border-white w-[270px] xl:w-[450px] h-[130px] mx-4 my-3" style={{ backgroundColor: "#313533", }}>
-                            <label className='absolute mx-3 my-[-13px] z-10 bg px-2' style={{ backgroundColor: "#313533", }}>Message</label>
+                            <label className='absolute mx-3 my-[-13px] z-1 bg px-2' style={{ backgroundColor: "#313533", }}>Message</label>
                             <textarea className='w-[100%] h-[100%] p-2' style={{ backgroundColor: "#313533", }} type="text" />
                         </div>
                     </div>

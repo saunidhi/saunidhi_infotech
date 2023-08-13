@@ -27,7 +27,7 @@ function MobileNavBar(props) {
 
     return (
         <>
-            <div className="fixed h-[100vh] w-[100%] bg-black/80 hover:scroll-auto" >
+            <div className={`fixed h-[100%] w-[100%] bg-black/80 hover:scroll-auto z-50 `}>
                 <div className="bg-gray-800 h-[100vh] w-[300px] rounded-r-3xl rounded-br-2xl">
                     <header className='bg-gray-900 h-12 flex justify-between px-4 rounded-r-3xl  text-[20px] items-center border-blue-200'>
                         <div className="text-white"> SaunidhiInfotech</div>
@@ -44,7 +44,7 @@ function MobileNavBar(props) {
                         <Link to="" onClick={props.Toggle} className="hidden Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">PORTFOLIO</Link>
 
                         <Link to="about" onClick={props.Toggle} className="Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">ABOUT US</Link>
-                        
+
                         {/* this is disable for some time */}
                         <Link to="" className="hidden Services p-2 text-base w-[80%] text-white hover:bg-red-500 cursor-pointer hover:text-white rounded-2xl text-center">BLOG</Link>
 

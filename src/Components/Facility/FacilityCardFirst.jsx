@@ -8,8 +8,15 @@ import truckIcons from '../Assets/truckIcons.png'
 import SettingIcon from '../Assets/SettingIcon.png'
 import GameIcon from '../Assets/GameIcon.png'
 import AiLot from '../Assets/AiLot.png'
+import { Link } from 'react-router-dom'
 
 function FacilityCardFirst() {
+    // this method for only Bottom to top scrolling 
+    const Goto = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth", });
+    }
+
+
     return (
         <>
             <div className="Bgimge py-14 sm:h-[50rem]  md:h-[50rem] xl:h-[50rem] xl:py-1 bg-no-repeat " style={{ backgroundImage: `url(${CoverImg}) ` }}>
@@ -18,7 +25,7 @@ function FacilityCardFirst() {
                     <Card image={SettingIcon} title={"Automotive"} />
                     <Card image={truckIcons} title={"Logistics"} />
                     <Card image={education} title={"Education"} h={"144"} w={"300"} />
-                    <Card image={emovebgPreview} title={"Healthcare"} h={14} w={30} />
+                    <Link to="Healthcare" onClick={Goto}><Card image={emovebgPreview} title={"Healthcare"} h={14} w={30} /></Link>
                     <Card image={parking} title={"IOT"} />
                     <Card image={AiLot} title={"AI"} />
                     <Card className="p-3" image={GameIcon} title={"E - Sports Tournaments"} />
