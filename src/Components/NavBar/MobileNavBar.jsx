@@ -46,6 +46,7 @@ function MobileNavBar(props) {
                             <div className="invisible fixed z-50 flex flex-col bg-black w-[75%] text-white shadow-xl group-hover:visible px-8 mt-[35px] mx-[-3px]">
                                 <Link to="/" onClick={Goto} className=" block my-3 sm:text-[10px] md:text-base text-center hover:bg-red-500 cursor-pointer hover:text-white w-[100%]">Services</Link>
                                 <Link onClick={GotoUp} to="Healthcare" className=" block my-3 sm:text-[10px] md:text-base text-center hover:bg-red-500 cursor-pointer hover:text-white w-[100%]">HealthCare</Link >
+                                <Link onClick={GotoUp} to="education" className=" block my-3 sm:text-[10px] md:text-base text-center hover:bg-red-500 cursor-pointer hover:text-white w-[100%]">Education</Link >
                             </div>
                         </div>
 

@@ -6,6 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 function NavBar() {
     let location = useLocation();
+    console.log(location.pathname);
 
     const [ShowSideBar, setSideBar] = useState(false);
 
@@ -35,7 +36,7 @@ function NavBar() {
     const GotoProjectIdea = () => {
         if (location.pathname === "/") {
             const section = document.querySelector('#ProjectIdea');
-            section.scrollIntoView({ behavior: 'auto', block: 'start' });
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     }
 
@@ -43,7 +44,6 @@ function NavBar() {
 
     const hendleScroll = () => {
         const offset = window.scrollY
-        console.log(offset);
         if (offset > 600) {
             setScrolled(true);
         }
@@ -54,9 +54,18 @@ function NavBar() {
         window.addEventListener("scroll", hendleScroll);
     }, []);
 
+    const pathList = ["/Login", "/signup"]
+
     return (
+
         <>
-            <header className={`items-center ${scrolled ? " sticky bg-violet-950 z-40" : "absolute"} bg-transparent  top-0 z-[1] w-[100%] justify-around text-white flex  xl:h-[7rem]`}>
+            <header className={`
+             ${location.pathname == "/Login" ? "hidden" : "block"} 
+             ${location.pathname == "/signup" ? "hidden" : "block"}
+             ${location.pathname == "/education" ? "hidden" : "block"}
+             ${scrolled ? " sticky bg-violet-950 z-40" : "absolute"} 
+            
+           items-center bg-transparent  top-0 z-[1] w-[100%] justify-around text-white flex  xl:h-[7rem]`}>
                 <div className="logo flex items-center ">
 
                     <div className="logo xl:w-[58px] xl:h-[100%] flex items-center ">
@@ -73,14 +82,15 @@ function NavBar() {
                 <div className="sm:hidden xl:hidden items-center hover:bg-red-600 p-1" onClick={Toggle}> <BsList size={30} /></div>
 
                 {/* hover dropdown menu */}
-                
+
                 <div className="hidden sm:menu-hover sm:flex sm:text-[10px] propertes uppercase xl:flex items-center xl:text-[20px] text-center font-semi ">
                     <Link to="/" onClick={GotoService}  >
                         <div className="group relative menu-hover sm:px-2 md:w-[100px] md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2  cursor-pointer">
                             <div >Services</div>
 
                             <div className="invisible my-2 absolute z-50 flex w-fit flex-col bg-gray-100 px-4 text-gray-800 shadow-xl group-hover:visible">
-                                <Link onClick={Goto} to="Healthcare" className=" block my-3 sm:text-[10px] md:text-base text-center ">HealthCare</Link >
+                                <Link onClick={Goto} to="Healthcare" className=" block my-3 sm:text-[10px] md:text-base text-center  ">HealthCare</Link >
+                                <Link onClick={Goto} to="education" className=" block my-3 sm:text-[10px] md:text-base text-center border-t-2">Education</Link >
                             </div>
                         </div>
                     </Link>
