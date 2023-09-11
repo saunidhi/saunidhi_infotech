@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "CardTitle": "Bulk Messages",
+        "CardData": [
+            "Bulk Whatsapp",
+            "Bulk SMS",
+            "Bulk Emails"
+        ]
+    },
+    {
+        "id": 2,
+        "CardTitle": "Web 3.0",
+        "CardData": [
+            "E - Sports Tournaments",
+            "NFT launchpads",
+            "DeFi staking plateforms",
+            "NFT devlopment"
+        ]
+    },
+    {
+        "id": 3,
+        "CardTitle": "Legal Services",
+        "CardData": [
+            "AI Solution",
+            "Android App DEVelopment",
+            "Digital Video Mixing",
+            "Prpmotional Videos",
+            "Social /media Marketing"
+        ]
+    },
+    {
+        "id": 4,
+        "CardTitle": "Web 2.0",
+        "CardData": [
+            "UI/UX design",
+            "web devlopment",
+            "Web Hosting"
+        ]
+    },
+    {
+        "id": 5,
+        "CardTitle": "Web 2.0",
+        "CardData": [
+            "UI/UX design",
+            "web devlopment",
+            "Web Hosting"
+        ]
+    }
+
+]
