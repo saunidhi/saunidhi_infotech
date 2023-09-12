@@ -16,8 +16,8 @@ import ForgetPassW from './Components/Pages/ForgetPassw/ForgetPassW.jsx';
 import Registration from './Components/Pages/RegistrationForms/Registration.jsx';
 import AplicationForm from './Components/Pages/RegistrationForms/AplicationForm.jsx';
 import Protective from './ProtectiveComponents/Protective.jsx';
-// import RegistrationForms from './Components/Pages/RegistrationForms/EducationForm.jsx'
-// import UploadDoc from './Components/Pages/RegistrationForms/UploadDoc.jsx';
+import RegistrationForms from './Components/Pages/RegistrationForms/EducationForm.jsx'
+import UploadDoc from './Components/Pages/RegistrationForms/UploadDoc.jsx';
 
 export default function App() {
 
@@ -42,8 +42,8 @@ export default function App() {
             {/* ############################# protect URLS ########################  */}
             <Route path='/Regis' element={<Protective Comp={Registration} />} />
             <Route path='/Apli' element={<Protective Comp={AplicationForm} />} />
-            {/* <Route path='/Edu' element={<Protective Comp={RegistrationForms} />} />
-            <Route path='/uploadDcos' element={<UploadDoc/>} /> */}
+            <Route path='/Edu' element={<Protective Comp={RegistrationForms} />} />
+            <Route path='/uploadDocs' element={<Protective Comp={UploadDoc} />} />
 
             {/* ########################################################### */}
 
