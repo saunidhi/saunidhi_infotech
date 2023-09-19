@@ -12,7 +12,7 @@ function Reghome() {
     return (
         <>
             {/* Header Background Image */}
-            <div className="Bgimge sm:flex sm:flex-col h-[100vh] sm:h-[50rem] sm:gap-5 md:h-[50rem] xl:h-[100vh] bg-no-repeat image" style={{ backgroundImage: `url(${education})`, backgroundSize: '100% 100%' }} >
+            <div className="Bgimge sm:flex sm:flex-col h-[100vh] sm:h-[50rem] sm:gap-5 md:h-[50rem] xl:h-[50rem] bg-no-repeat image" style={{ backgroundImage: `url(${education})`, backgroundSize: '100% 100%' }} >
                 <div>
                     <Header />
                 </div>
