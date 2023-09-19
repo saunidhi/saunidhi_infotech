@@ -25,7 +25,7 @@ function Banner() {
         },
         {
             "id": 3,
-            "CardTitle": "Legal Services",
+            "CardTitle": "AI Services",
             "CardData": [
                 "> AI Solution",
                 "> Android App Development",
@@ -58,7 +58,7 @@ function Banner() {
 
     return (
         <>
-            <div className="h-[100%] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3  xl:grid-cols-5 gap-2 py-5 sm:gap-2 md:py-10 xl:w-[100%] px-2" style={{ backgroundImage: `url(${serviceImg}) ` }}>
+            <div className="h-[100%] grid px-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-3 md:gap-5 xl:grid-cols-4 gap-2 py-5 sm:gap-2 md:py-10 xl:w-[100%]" style={{ backgroundImage: `url(${serviceImg}) ` }}>
                 {myData.map((item) => <Card key={item.id} Title={item.CardTitle} info={item.CardData} />)}
             </div>
         </>

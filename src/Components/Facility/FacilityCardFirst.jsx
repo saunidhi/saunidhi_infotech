@@ -28,7 +28,7 @@ function FacilityCardFirst() {
                     <Card image={AiLot} title={"AI"} />
                     <Card className="p-3" image={GameIcon} title={"E - Sports Tournaments"} />
                 </div>
-                <div className="bottom-aria w-[10rem] mt-[-100px] ml-3 text-white sm:mt-2 sm:w-[15rem] sm:p-4 xl:h-[12rem] xl:w-[25rem] xl:mx-36 " style={{ fontFamily: "Inter", fontWeight: "700", fontStyle: "normal", lineHeight: "normal" }}>
+                <div className="bottom-aria w-[10rem] mt-[70px] ml-5 text-white sm:mt-2 sm:w-[15rem] sm:p-4 xl:h-[12rem] xl:w-[25rem] xl:mx-36 " style={{ fontFamily: "Inter", fontWeight: "700", fontStyle: "normal", lineHeight: "normal" }}>
                     <span className='uppercase'>Enhance your Industry width us</span> <br />
                     <p className='sm:text-[30px] xl:text-[48px]'>Industry-focused AI / IOT Solutions
                     </p>

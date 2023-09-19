@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import education from './education.png'
 import { Link } from 'react-router-dom';
 import Header from './Header'
+import Saunidhi_FAQ from '../../../saunidhiFiles/Saunidhi_FAQ.pdf'
 
 function Reghome() {
 
@@ -19,11 +20,11 @@ function Reghome() {
                 {/* sm:flex sm:flex-wrap */}
                 <div className=' uppercase mt-7 grid gap-4 grid-cols-2 mx-auto w-[90%] sm:w-[80%] sm:grid-cols-3 sm:gap-24 md:grid-cols-3 xl:grid-cols-4 sm:mt-14'>
 
-                    <Link to="/education" download={education} className="hover:cursor-pointer card rounded-3xl h-[11rem] w-[10rem] sm:h-[15rem] sm:w-[13rem] bg-[#0000]/60 shadow-xl shadow-[#000] flex items-center justify-center text-[16px] text-center text-white transition-all ease-in-out duration-700 hover:bg-black hover:border-[#000]  hover:text-xl">FAQ TPC (For Students)</Link>
+                    <a href={Saunidhi_FAQ} download="Saunidhi infotech Student FAQ " target='_blank' className="hover:cursor-pointer card rounded-3xl h-[11rem] w-[10rem] sm:h-[15rem] sm:w-[13rem] bg-[#0000]/60 shadow-xl shadow-[#000] flex items-center justify-center text-[16px] text-center text-white transition-all ease-in-out duration-700 hover:bg-black hover:border-[#000]  hover:text-xl">FAQ TPC (For Students)</a>
 
                     <Link to="/education" className="hover:cursor-pointer card rounded-3xl h-[11rem] w-[10rem] sm:h-[15rem] sm:w-[13rem] bg-[#0000]/60 shadow-xl shadow-[#000] flex items-center justify-center text-[16px] text-center text-white transition-all ease-in-out duration-700 hover:bg-black hover:border-[#000]  hover:text-xl">Steps for Registration</Link>
 
-                    <Link to="/education" className="hover:cursor-pointer card rounded-3xl h-[11rem] w-[10rem] sm:h-[15rem] sm:w-[13rem] bg-[#0000]/60 shadow-xl shadow-[#000] flex items-center justify-center text-[16px] text-center text-white transition-all ease-in-out duration-700 hover:bg-black hover:border-[#000]  hover:text-xl">New Registration </Link>
+                    <Link to="/New-Regirations" className="hover:cursor-pointer card rounded-3xl h-[11rem] w-[10rem] sm:h-[15rem] sm:w-[13rem] bg-[#0000]/60 shadow-xl shadow-[#000] flex items-center justify-center text-[16px] text-center text-white transition-all ease-in-out duration-700 hover:bg-black hover:border-[#000]  hover:text-xl">New Registration </Link>
 
                     <Link to="/education" className="hover:cursor-pointer card rounded-3xl h-[11rem] w-[10rem] sm:h-[15rem] sm:w-[13rem] bg-[#0000]/60 shadow-xl shadow-[#000] flex items-center justify-center text-[16px] text-center text-white transition-all ease-in-out duration-700 hover:bg-black hover:border-[#000]  hover:text-xl">quiz question</Link>
 

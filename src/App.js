@@ -34,15 +34,17 @@ export default function App() {
             <Route path="Healthcare" element={<Healthcare />} />
             <Route path="education" element={<Reghome />} />
             <Route path="Login" element={<LogIn />} />
-            <Route path="signup" element={< SignUp />} />
             <Route path="forget" element={< ForgetPassW />} />
+            {/* ########################### Registration forms ################## */}
+            <Route path='/New-Regirations' element={<Registration />} />
+            <Route path='/AplicationForm' element={<AplicationForm />} />
+            <Route path='/RegistrationForm' element={<RegistrationForms />} />
+            <Route path='/uploadDocs' element={<UploadDoc />} />
+
+
 
             {/* ############################# protect URLS ########################  */}
 
-            <Route path='/Regis' element={<Protective Comp={Registration} />} />
-            <Route path='/Apli' element={<Protective Comp={AplicationForm} />} />
-            <Route path='/Edu' element={<Protective Comp={RegistrationForms} />} />
-            <Route path='/uploadDocs' element={<Protective Comp={UploadDoc} />} />
             <Route path='/download' element={<Protective Comp={Download} />} />
 
             {/* ########################################################### */}

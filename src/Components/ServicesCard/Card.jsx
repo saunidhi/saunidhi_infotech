@@ -4,7 +4,7 @@ import React from 'react'
 function Card(props) {
     return (
         <>
-            <div className='pt-2 px-1 w-[175px] sm:w-[230px] sm:px-1 sm:h-fit md:w-[270px] md:h-[300px] xl:w-[300px] xl:h-[350px] opacity-90 bg-black relative rounded-xl sm:rounded-t-3xl xl:rounded-t-3xl text-white flex flex-col'>
+            <div className='pt-2 px-1 w-[175px] sm:w-[230px] sm:px-1 sm:h-fit md:w-[270px] md:h-[300px] xl:w-[300px] xl:h-[350px] opacity-90 bg-black relative rounded-xl sm:rounded-3xl xl:rounded-3xl text-white flex flex-col'>
 
                 {/* title */}
                 <span className='text-[20px] sm:text-[18px] xl:text-[32px] mx-auto sm:my-3 xl:my-5'>{props.Title}
