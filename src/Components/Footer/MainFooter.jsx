@@ -12,7 +12,7 @@ function MainFooter() {
   return (
     <>
       <div className={`
-     ${location.pathname === "/Login" ? "hidden" : "block"} 
+     ${location.pathname === "/login" ? "hidden" : "block"} 
      ${location.pathname === "/signup" ? "hidden" : "block"}
      ${location.pathname === "/education" ? "hidden" : "block"}
      ${location.pathname === "/forget" ? "hidden" : "block"}
@@ -21,6 +21,7 @@ function MainFooter() {
      ${location.pathname === "/uploadDocs" ? "hidden" : "block"}
      ${location.pathname === "/Apli" ? "hidden" : "block"}
      ${location.pathname === "/download" ? "hidden" : "block"}
+     ${location.pathname === "/New-Registration" ? "hidden" : "block"}
       `}>
         <Bottom />
         <FooterBanner />

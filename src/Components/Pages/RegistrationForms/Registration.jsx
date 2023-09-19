@@ -10,8 +10,8 @@ function Registration() {
     return (
         <>
             <NavBar />
-            <div className='bg-[#F4F5FB] md:grid md:grid-flow-col h-fit'>
-                <div className='bg-white w-[90%] mx-auto rounded-md space-y-2 p-2 h-fit mt-3 shadow md:col-span-1'>
+            <div className='bg-[#F4F5FB] md:grid md:grid-flow-col h-fit '>
+                <div className='bg-white w-[90%] mx-auto rounded-md space-y-2 p-2 h-fit mt-3 shadow md:col-span-1 md:sticky md:top-14'>
                     <h5 className='ml-2' >Form Status</h5>
                     <hr />
                     <h4 className='ml-5 text-[#16192C]' >Apply for Online Registration</h4>

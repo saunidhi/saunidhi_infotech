@@ -24,7 +24,7 @@ function Reghome() {
 
                     <Link to="/education" className="hover:cursor-pointer card rounded-3xl h-[11rem] w-[10rem] sm:h-[15rem] sm:w-[13rem] bg-[#0000]/60 shadow-xl shadow-[#000] flex items-center justify-center text-[16px] text-center text-white transition-all ease-in-out duration-700 hover:bg-black hover:border-[#000]  hover:text-xl">Steps for Registration</Link>
 
-                    <Link to="/New-Regirations" className="hover:cursor-pointer card rounded-3xl h-[11rem] w-[10rem] sm:h-[15rem] sm:w-[13rem] bg-[#0000]/60 shadow-xl shadow-[#000] flex items-center justify-center text-[16px] text-center text-white transition-all ease-in-out duration-700 hover:bg-black hover:border-[#000]  hover:text-xl">New Registration </Link>
+                    <Link to="/New-Registration" className="hover:cursor-pointer card rounded-3xl h-[11rem] w-[10rem] sm:h-[15rem] sm:w-[13rem] bg-[#0000]/60 shadow-xl shadow-[#000] flex items-center justify-center text-[16px] text-center text-white transition-all ease-in-out duration-700 hover:bg-black hover:border-[#000]  hover:text-xl">New Registration </Link>
 
                     <Link to="/education" className="hover:cursor-pointer card rounded-3xl h-[11rem] w-[10rem] sm:h-[15rem] sm:w-[13rem] bg-[#0000]/60 shadow-xl shadow-[#000] flex items-center justify-center text-[16px] text-center text-white transition-all ease-in-out duration-700 hover:bg-black hover:border-[#000]  hover:text-xl">quiz question</Link>
 
