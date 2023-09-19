@@ -29,7 +29,9 @@ function Home() {
             {/* there are 5 cards */}
             <Banner />
 
-            <ProjectIdeaCard />
+            <div className="shadow">
+                <ProjectIdeaCard />
+            </div>
 
             <div className="my-[-2rem]">
                 <MainfacilityCard />

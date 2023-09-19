@@ -8,7 +8,6 @@ import AboutUs from './Components/Pages/AboutUs/AboutUs.jsx'
 import LogIn from './Components/Pages/LogIn/LogIn.jsx';
 import SignUp from "./Components/Pages/SignUp/SignUp.jsx"
 import AppContext from './Components/Utils/Context.js';
-import PortFolio from './Components/Pages/PortFolio/PortFolio.jsx';
 import Career from './Components/Pages/Careers/Career.jsx';
 import Healthcare from './Components/Pages/Healthcare/Healthcare.jsx';
 import Reghome from './Components/Pages/Registration/Reghome.jsx';
@@ -18,6 +17,7 @@ import AplicationForm from './Components/Pages/RegistrationForms/AplicationForm.
 import Protective from './ProtectiveComponents/Protective.jsx';
 import RegistrationForms from './Components/Pages/RegistrationForms/EducationForm.jsx'
 import UploadDoc from './Components/Pages/RegistrationForms/UploadDoc.jsx';
+import Download from './Components/Pages/RegistrationForms/Download.jsx'
 
 export default function App() {
 
@@ -26,12 +26,10 @@ export default function App() {
       <BrowserRouter>
         <AppContext>
           <Routes>
-
             {/* None protect URLS  */}
             <Route path="/" element={<Home />} />
             <Route path="contact" element={<ContectUs />} />
             <Route path="about" element={<AboutUs />} />
-            <Route path="portfolio" element={< PortFolio />} />
             <Route path="careers" element={<Career />} />
             <Route path="Healthcare" element={<Healthcare />} />
             <Route path="education" element={<Reghome />} />
@@ -40,10 +38,12 @@ export default function App() {
             <Route path="forget" element={< ForgetPassW />} />
 
             {/* ############################# protect URLS ########################  */}
+
             <Route path='/Regis' element={<Protective Comp={Registration} />} />
             <Route path='/Apli' element={<Protective Comp={AplicationForm} />} />
             <Route path='/Edu' element={<Protective Comp={RegistrationForms} />} />
             <Route path='/uploadDocs' element={<Protective Comp={UploadDoc} />} />
+            <Route path='/download' element={<Protective Comp={Download} />} />
 
             {/* ########################################################### */}
 

@@ -19,6 +19,8 @@ function MainFooter() {
      ${location.pathname === "/Regis" ? "hidden" : "block"}
      ${location.pathname === "/Edu" ? "hidden" : "block"}
      ${location.pathname === "/uploadDocs" ? "hidden" : "block"}
+     ${location.pathname === "/Apli" ? "hidden" : "block"}
+     ${location.pathname === "/download" ? "hidden" : "block"}
       `}>
         <Bottom />
         <FooterBanner />

@@ -25,7 +25,7 @@ function Career() {
     return (
         <>
             {/* Navbar Background color */}
-            <div className="h-[4rem] bg-slate-800 md:h-[4rem] xl:h-[7rem]"></div>
+            <div className="hidden h-[4rem] bg-slate-800 md:h-[4rem] xl:h-[7rem]"></div>
 
             <div className="Bgimge sm:flex sm:flex-col h-[50vh] sm:h-[100vh] sm:gap-5 md:h-[100%] xl:h-[100vh] bg-no-repeat image md:pl-[10rem]" style={{ backgroundImage: `url(${CareerBgImg})`, backgroundSize: '100% 100%' }}>
 

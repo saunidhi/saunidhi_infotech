@@ -9,7 +9,7 @@ const AplicationForm = () => {
 
     return (
 
-        <body className='bg-[#F4F5FB] font-IBM Plex Sans ' >
+        <body className='bg-[#F4F5FB] font-IBM Plex Sans h-[40rem]' >
 
             <div className='mx-1 rounded-md my-3 text-center text-white round-full bg-[#5C60F5]'>
                 <h4 className='text-center text-white'>Announcement: </h4> Welcome QuizCompetition - 2023 Portal.</div>

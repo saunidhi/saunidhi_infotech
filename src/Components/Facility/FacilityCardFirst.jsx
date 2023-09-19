@@ -4,7 +4,6 @@ import CoverImg from '../Assets/CoverImg.png'
 import emovebgPreview from '../Assets/emovebgPpreview.png'
 import education from '../Assets/education.png'
 import parking from '../Assets/parking.png'
-import truckIcons from '../Assets/truckIcons.png'
 import SettingIcon from '../Assets/SettingIcon.png'
 import GameIcon from '../Assets/GameIcon.png'
 import AiLot from '../Assets/AiLot.png'
@@ -22,7 +21,7 @@ function FacilityCardFirst() {
                 {/* facility cards */}
                 <div className="container flex flex-wrap flex-row-reverse gap-10 w-[90%] sm:flex sm:flex-wrap sm:flex-row-reverse sm:mx-auto md:mx-auto xl:w-[100%] xl:gap-20 xl:p-16 xl:flex xl:flex-wrap xl:flex-row-reverse">
                     <Card image={SettingIcon} title={"Automotive"} />
-                    <Card image={truckIcons} title={"Logistics"} />
+                    {/* <Card image={truckIcons} title={"Logistics"} /> */}
                     <Link to="education" onClick={Goto}><Card image={education} title={"Education"} h={"144"} w={"300"} /></Link>
                     <Link to="Healthcare" onClick={Goto}><Card image={emovebgPreview} title={"Healthcare"} h={14} w={30} /></Link>
                     <Card image={parking} title={"IOT"} />

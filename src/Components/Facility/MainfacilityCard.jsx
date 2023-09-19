@@ -6,7 +6,7 @@ function MainfacilityCard() {
     return (
         <>
             <FacilityCardFirst />
-            <EducationInfo />
+            {/* <EducationInfo /> */}
         </>
     )
 }

@@ -71,7 +71,7 @@ function LogIn() {
                             <div className='bg-white shadow-lg mx-auto w-[90%] sm:w-[100%] p-3 rounded-3xl flex gap-4 my-5 border-2 border-black'>
                                 <div><FaUserAlt size={23} /></div>
                                 <div className='w-auto pl-2'>
-                                    <input type="text" name='email' required value={formData.email} onChange={handleInput} className='h-[100%] w-[100%] text-xl border-none' placeholder='Enter Email or Phone' />
+                                    <input type="text" name='email' required value={formData.email} onChange={handleInput} className='h-[100%] w-[100%] text-xl border-none' placeholder='Registration Number' />
                                 </div>
                             </div>
                             <div className='bg-white shadow-lg mx-auto w-[90%] sm:w-[100%] p-3 rounded-3xl flex gap-4 my-5 border-2 border-black'>
@@ -90,23 +90,20 @@ function LogIn() {
                             <button type='submit' className='bg-blue-800 cursor-pointer shadow-md mt-8 mx-auto w-[90%] sm:w-[100%] text-white p-3 rounded-full flex justify-center border-2 border-[#090303] text-[23px]' style={{ FontFamily: "Readex Pro", FontStyle: "normal", FontWeight: "400" }}>Login</button>
                         </form>
 
-                        <div className='flex flex-col'>
-                            <div className='flex justify-between'>
-                                <Link to="/signup" className='text-lg w-fit cursor-pointer capitalize text-[#000] hover:text-blue-600 ' style={{ FontFamily: " Red Rose", FontWeight: "400" }}>create account</Link>
+                        <div className='flex flex-col gap-4'>
+                            <Link to="/forget" className='text-lg w-fit cursor-pointer capitalize text-[#000] hover:text-blue-600 ' style={{ FontFamily: " Red Rose", FontWeight: "400" }}>forget password</Link>
 
-                                <Link to="/forget" className='text-lg w-fit cursor-pointer capitalize text-[#000] hover:text-blue-600 ' style={{ FontFamily: " Red Rose", FontWeight: "400" }}>forget password</Link>
-                            </div>
+                            <Link to="/signup" className='bg-blue-700 px-3 py-1 rounded-full text-white shadow text-lg w-fit cursor-pointer capitalize hover:bg-blue-900' style={{ FontFamily: " Red Rose", FontWeight: "400" }}>New Regitration</Link>
+                        </div>
 
-                            <div className='bg-black w-[20rem] h-[1px] flex mt-6' ></div>
+                        {/* <div className='bg-black w-[20rem] h-[1px] flex mt-6' ></div>
 
                             <div className='capitalize  text-gray-700 flex mx-auto text-lg  bg-white w-fit -mt-[16px] px-1' style={{ FontFamily: " Red Rose", FontWeight: "300" }}> Or Continue with </div>
 
                             <div className='flex justify-center'>
                                 <img className='cursor-pointer h-fit mt-[2px]' style={{ Width: "57px", FlexShrink: "0" }} src={Google} alt="icon file here" />
                                 <img className='cursor-pointer h-fit mt-1' style={{ Width: "57px", height: "36px", FlexShrink: "0" }} src={Fb} alt="icon file here" />
-                            </div>
-
-                        </div>
+                            </div> */}
                     </div>
                 </div>
             </div>

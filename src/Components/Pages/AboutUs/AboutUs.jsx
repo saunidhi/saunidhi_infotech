@@ -20,7 +20,7 @@ function AboutUs() {
     <>
       <NavBar />
       {/* Navbar Background color */}
-      <div className="h-[4rem] bg-slate-800 md:h-[4rem] xl:h-[7rem]"></div>
+      <div className="hidden h-[4rem] bg-slate-800 md:h-[4rem] xl:h-[7rem]"></div>
 
       {/* this tag for only image manage*/}
       <div id='scrollUp'></div>

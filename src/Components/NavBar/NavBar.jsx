@@ -1,24 +1,13 @@
 import amiInfotech from '../Assets/amiInfotech.png'
-import { BsList } from "@react-icons/all-files/bs/BsList";
-import MobileNavBar from './MobileNavBar';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+// Initialization for ES Users
+import { Collapse, initTE, Dropdown } from "tw-elements";
+
+initTE({ Collapse, Dropdown });
 
 function NavBar() {
     let location = useLocation();
-    // console.log(location.pathname);
-
-    const [ShowSideBar, setSideBar] = useState(false);
-
-    const Toggle = () => {
-        if (ShowSideBar) {
-            setSideBar(false);
-        }
-        else {
-            setSideBar(true);
-        }
-    }
-
 
     // this method for only Bottom to top scrolling 
     const Goto = () => {
@@ -29,7 +18,7 @@ function NavBar() {
     const GotoService = () => {
         if (location.pathname === "/") {
             const section = document.querySelector('#Service');
-            section.scrollIntoView({ behavior: 'auto', block: 'start' })
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }
     }
 
@@ -40,78 +29,61 @@ function NavBar() {
         }
     }
 
-    const [scrolled, setScrolled] = useState(false);
 
-    const hendleScroll = () => {
-        const offset = window.scrollY
-        if (offset > 900) {
-            setScrolled(true);
-        }
-        else { setScrolled(false); }
-    }
-
-    useEffect(() => {
-        window.addEventListener("scroll", hendleScroll);
-    }, []);
+    let [open, setOpen] = useState(false);
 
     return (
         <>
-            {/* ${location.pathname === "/Login" ? "hidden" : "block"} 
-             ${location.pathname === "/signup" ? "hidden" : "block"}
-             ${location.pathname === "/education" ? "hidden" : "block"}
-             ${location.pathname === "/forget" ? "hidden" : "block"}
-             ${location.pathname === "/Regis" ? "hidden" : "block"}
-             ${location.pathname === "/Apli" ? "hidden" : "block"} */}
-            <header className={` ${scrolled ? " sticky bg-violet-950 z-40" : "absolute"} transition-all duration-200
-           items-center bg-transparent  top-0 z-[1] w-[100%] justify-around text-white flex xl:h-[7rem]` }>
+            {/* ###################################################################################################################################### */}
+            {/* <!-- Main navigation container --> */}
 
-                <div className="logo flex items-center ">
-                    <div className="logo xl:w-[58px] xl:h-[100%] flex items-center ">
-                        <Link to='/'>
+            return (
+            <div className='shadow-md w-full fixed top-0 left-0 z-10 '>
+                <div className='md:flex items-center justify-between bg-black py-[3px] md:px-10 px-2 '>
+                    <div className='font-bold text-2xl cursor-pointer flex items-center text-white'>
+                        <Link to="/" onClick={Goto} className='text-3xl flex items-center '>
                             <img src={amiInfotech} alt="" />
+                            Saunidhi Infotech
                         </Link>
                     </div>
 
-                    <div className="logo-title text-[20px] font-bold sm:text-xl md:text-2xl xl:text-3xl ">
-                        <Link to='/'>
-                            SaunidhiInfotech
-                        </Link>
+                    <div onClick={() => setOpen(!open)} className='text-white text-3xl absolute right-8 top-3 cursor-pointer md:hidden'>
+                        <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
                     </div>
+
+                    <ul className={`uppercase md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-black text-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-14 ' : 'top-[-490px]'}`}>
+                        <li className='md:ml-8 text-xl md:my-0 my-7 group relative'>
+                            <Link to="/" onClick={GotoService} className='text-white hover:text-gray-400 duration-500'>
+                                <button className="text-white hover:text-gray-400 uppercase duration-500 inline-flex items-center">
+                                    <span className="mr-1">Services</span>
+                                    <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                    </svg>
+                                </button>
+
+                                <ul className="absolute hidden bg-black pt-1 group-hover:block">
+                                    <li className="uppercase">
+                                        <Link to="/Healthcare" onClick={Goto} className="rounded-t hover:text-white py-2 px-4 block whitespace-no-wrap">healthcare</Link>
+                                    </li>
+                                    <li className="uppercase">
+                                        <Link to="/education" onClick={Goto} className="rounded-t hover:text-white py-2 px-4 block whitespace-no-wrap">Education</Link>
+                                    </li>
+                                </ul>
+                            </Link>
+                        </li>
+                        <li className='md:ml-8 text-xl md:my-0 my-7'>
+                            <Link to="/" onClick={GotoProjectIdea} className='text-white hover:text-gray-400 duration-500'>Solution</Link>
+                        </li>
+                        <li className='md:ml-8 text-xl md:my-0 my-7'>
+                            <Link to="/about" onClick={Goto} className='text-white hover:text-gray-400 duration-500'>About</Link>
+                        </li>
+                        <li className='md:ml-8 text-xl md:my-0 my-7'>
+                            <Link to="/contact" onClick={Goto} className='text-white hover:text-gray-400 duration-500'>Contact</Link>
+                        </li>
+                    </ul>
                 </div>
-
-                <div className="sm:hidden xl:hidden items-center hover:bg-red-600 p-1" onClick={Toggle}> <BsList size={30} /></div>
-
-                {/* hover dropdown menu */}
-                <div className="hidden sm:menu-hover sm:flex sm:text-[10px] propertes uppercase xl:flex items-center xl:text-[20px] text-center font-semi ">
-                    <Link to="/" onClick={GotoService}  >
-                        <div className="group relative menu-hover sm:px-2 md:w-[100px] md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2  cursor-pointer">
-                            <div >Services</div>
-
-                            <div className="invisible my-2 absolute z-50 flex w-fit flex-col bg-gray-100 px-4 text-gray-800 shadow-xl group-hover:visible">
-                                <Link onClick={Goto} to="Healthcare" className=" block my-3 sm:text-[10px] md:text-base text-center  ">HealthCare</Link >
-                                <Link onClick={Goto} to="/education" className=" block my-3 sm:text-[10px] md:text-base text-center border-t-2">Education</Link >
-                            </div>
-                        </div>
-                    </Link>
-
-                    <Link to="/" onClick={GotoProjectIdea} className="solution sm:px-2 md:w-[100px] md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2  cursor-pointer">solution</Link>
-
-                    {/*Portfolio hidden */}
-                    <Link to="/portfolio" className="hidden portfolio sm:px-2 md:w-[100px] md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2  cursor-pointer">portfolio</Link>
-
-                    <Link to="/about" className="company sm:px-2 md:px-3 md:w-[100px] md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2 cursor-pointer">About us</Link>
-
-                    {/*Blog hidden */}
-                    <Link to="/blog" className="hidden blog sm:px-1 md:w-[100px] md:text-base xl:px-2 xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-1 cursor-pointer">blog</Link>
-
-                    <Link to="/contact" className="contact sm:px-2 md:text-base xl:w-[150px] hover:bg-white hover:text-black hover:rounded-[20px] hover:p-2  cursor-pointer">contact us</Link>
-                </div>
-            </header>
-
-            <div className={`sm:hidden duration-1000  fixed z-20 float-right `}>
-                {ShowSideBar && <MobileNavBar Toggle={Toggle} />}
             </div>
-
+            )
         </>
     )
 }
