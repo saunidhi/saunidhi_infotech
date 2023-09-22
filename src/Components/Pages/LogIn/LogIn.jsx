@@ -91,19 +91,11 @@ function LogIn() {
                         </form>
 
                         <div className='flex flex-col gap-4'>
-                            <Link to="/forget" className='text-lg w-fit cursor-pointer capitalize text-[#000] hover:text-blue-600 ' style={{ FontFamily: " Red Rose", FontWeight: "400" }}>forget password</Link>
+                            <Link to="/forget" className='text-lg w-fit cursor-pointer capitalize text-[#000] hover:text-blue-600' style={{ FontFamily: " Red Rose", FontWeight: "400" }}>forget password</Link>
 
-                            <Link to="/signup" className='bg-blue-700 px-3 py-1 rounded-full text-white shadow text-lg w-fit cursor-pointer capitalize hover:bg-blue-900' style={{ FontFamily: " Red Rose", FontWeight: "400" }}>New Regitration</Link>
+                            <Link to="/New-Registration" className='bg-blue-700 px-3 py-1 rounded-full text-white shadow text-lg w-fit cursor-pointer capitalize hover:bg-blue-900' style={{ FontFamily: " Red Rose", FontWeight: "400" }}>New Registration</Link>
                         </div>
 
-                        {/* <div className='bg-black w-[20rem] h-[1px] flex mt-6' ></div>
-
-                            <div className='capitalize  text-gray-700 flex mx-auto text-lg  bg-white w-fit -mt-[16px] px-1' style={{ FontFamily: " Red Rose", FontWeight: "300" }}> Or Continue with </div>
-
-                            <div className='flex justify-center'>
-                                <img className='cursor-pointer h-fit mt-[2px]' style={{ Width: "57px", FlexShrink: "0" }} src={Google} alt="icon file here" />
-                                <img className='cursor-pointer h-fit mt-1' style={{ Width: "57px", height: "36px", FlexShrink: "0" }} src={Fb} alt="icon file here" />
-                            </div> */}
                     </div>
                 </div>
             </div>
