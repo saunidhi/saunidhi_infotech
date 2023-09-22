@@ -83,14 +83,14 @@ function AboutInfo() {
                 </div>
             </div>
 
-            <div className='h-[14rem] flex items-center justify-center'>
+            {/* <div className='h-[14rem] flex items-center justify-center'>
                 <div className=' border-2 border-red-600 bg-gradient-to-t from-red-300  to-gray-300  rounded-full text-center shadow-md shadow-red-500 flex flex-col justify-center gap-3 w-[300px] h-[100px] sm:w-[450px] sm:h-[100px] md:w-[40rem] md:h-[110px] xl:w-[50rem] xl:h-[130px]'>
                     <div className='uppercase text-[13px] sm:text-[15px] md:text-[18px]'>LATEST SAUNIDHI INFOTECH</div>
                     <div className='text-[20px] sm:text-[22px] md:text-[25px]'>News & media coverage</div>
                 </div>
-            </div>
+            </div> */}
 
-            <div className='card flex flex-col-reverse h-[18rem] my-5 gap-3 md:flex md:flex-row md:w-[100%] md:h-[20rem] md:gap-3 '>
+            {/* <div className='card flex flex-col-reverse h-[18rem] my-5 gap-3 md:flex md:flex-row md:w-[100%] md:h-[20rem] md:gap-3 '>
 
                 <div className="card bg-blue-600 rounded-lg uppercase h-[44px] w-[210px] flex justify-center items-center text-white mx-auto hover:bg-blue-800">Locations</div>
 
@@ -99,7 +99,7 @@ function AboutInfo() {
                     <div className='my-3 mx-5 md:mx-10 md:text-xl'>What does a paper company know about ERP? Quite a bit as it turns out</div>
                     <div className='mx-5 text-[13px] md:mx-10 md:text-sm'>Koch Industries COO James Hannan and Saunidhi Infotech CEO Kevin Samuelson discuss the business partnership that could catalyze the type of change many ERP customers have been looking for.</div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

@@ -39,7 +39,7 @@ function Banner() {
             "CardTitle": "Web 2.0",
             "CardData": [
                 "> UI/UX Design",
-                "> Web Hevelopment",
+                "> Web Development",
                 "> Web Hosting"
             ]
         },
