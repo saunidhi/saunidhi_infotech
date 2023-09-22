@@ -18,9 +18,9 @@ function Banner() {
             "CardTitle": "Web 3.0",
             "CardData": [
                 "> E-Sports Tournaments",
-                "> NFT launchpads",
-                "> DeFi staking plateforms",
-                "> NFT devlopment"
+                "> NFT Launchpads",
+                "> DeFi Staking Plateforms",
+                "> NFT Development"
             ]
         },
         {
@@ -30,16 +30,16 @@ function Banner() {
                 "> AI Solution",
                 "> Android App Development",
                 "> Digital Video Mixing",
-                "> Prpmotional Videos",
-                "> Social /media Marketing"
+                "> Promotional Videos",
+                "> Social /Media Marketing"
             ]
         },
         {
             "id": 4,
             "CardTitle": "Web 2.0",
             "CardData": [
-                "> UI/UX design",
-                "> web devlopment",
+                "> UI/UX Design",
+                "> Web Hevelopment",
                 "> Web Hosting"
             ]
         },

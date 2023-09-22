@@ -7,7 +7,7 @@ function Footer() {
         <>
             <div className="footer bg-black text-white text-center border-t-white pt-1 text-sm items-center sm:flex sm:justify-between sm:px-3 md:flex md:h-16 pb-2">
                 <span className='flex items-center justify-center '>
-                    <span className='uppercase text-xs xl:text-base'>© Copyright 2023. Saunidhi InfoTech. All rights reserved</span>
+                    <span className='capitalize text-xs xl:text-base '>© Copyright 2023. Saunidhi InfoTech. All Rights Reserved</span>
                 </span>
                 <span className='uppercase text-xs flex flex-wrap sm:flex-nowrap justify-center items-center gap-4 md:mx-[40px]'>
                     <div className="icons flex my-1">

@@ -1,13 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import NavBar from './NavBar'
 
 const Download = () => {
   return (
     <>
       <div className='sm:h-[40rem] h-[100vh]'>
+        <NavBar />
         <div className='flex'>
-          <button className='bg-[#00CC88] mx-auto text-white px-3 py-3 my-1  items-center rounded'  >Download / Print : Confirmation Page</button>
+          <button className='bg-[#00CC88] mx-auto text-white px-4 py-3 my-1  items-center rounded-2xl '>Download / Print : Confirmation Page</button>
         </div>
-        <div className='md:grid md:grid-cols-2 mt-4' >
+        <div className='md:grid md:grid-flow-col mt-4' >
           <div className=''>
             <label htmlFor="ragistration" class=' px-4 text-center text-2xl'> Registration </label>
             <div className='md:grid md:grid-flow-col'>
@@ -17,6 +20,7 @@ const Download = () => {
                   <div className='py-2 text-sm'>Apply for Online Registration
                     <div className='py-2 sm:px-2 text-sm text-[#525F7F]'>Fill Online Application Form</div>
                     <div className='py-2 sm:px-2 text-sm text-[#525F7F]'>Pay Examination Fee </div>
+                    <Link to="" className='py-3 sm:px-2 text-sm text-[#525F7F]'>Go Exam </Link>
                   </div>
                 </div>
 
@@ -36,20 +40,24 @@ const Download = () => {
           </div>
 
 
+          {/* Quiz competiton status*/}
+          <div className='rounded-md  drop-shadow-lg  divide-solid bg-white py-2 px-2 grid-flow-col gap-2' >
+            <div className='py-4 text-2xl border-b-2 text-center'>quiz competition</div>
 
-          <div className='rounded-md drop-shadow-lg divide-y divide-solid bg-white py-2 px-2' >
-            <div className='py-2 text-2xl'>quiz competition</div>
-            <div className='px-2'>
-
+            <div className='flex flex-col bg-[#EFEFFE] p-2 rounded-md '>
               <div className='py-2 text-sm'>Welcome, Quiz competition - 2023 Applicant!</div>
-              <div className='py-2 text-sm  '>You can apply and track your Quiz competition - 2023 application here. </div>
-              <div className='py-2 text-sm'>Your application number is XXXXXXXXXXXXXXXX and your application status is
-                <label className='bg-[#00CC88] px-1 rounded ml-1'> SUBMITTED</label >
+              <div className='text-sm  '>You can apply and track your Quiz competition - 2023 application here. </div>
+
+              <div className='flex flex-wrap h-fit w-fit items-center'>
+                <div className='text-sm '>Your application number is XXXXXXXXXXXXXXXX and your application status is</div>
+                <label className='bg-[#00CC88] text-white p-2 rounded-2xl ml-1 my-8 '> SUBMITTED</label >
               </div>
             </div>
-            <div>
-              <div className=' flex '><button className='bg-[#00CC88] text-white mx-auto  my-3 px-1 py-1   rounded'  >Download / Print : Confirmation Page</button></div>
+
+            <div className=' flex flex-col items-center h-52 border-t-2 pb-4 '>
+              <div className=' flex '><button className=' bg-[#00CC88] text-white mx-auto my-3 py-2  rounded-2xl px-4'  >Download / Print : Confirmation Page</button></div>
             </div>
+
           </div>
         </div>
 

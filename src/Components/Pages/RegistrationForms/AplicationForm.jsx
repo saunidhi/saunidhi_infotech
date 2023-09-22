@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
+import NavBar from './NavBar';
 
 const AplicationForm = () => {
 
@@ -9,9 +10,11 @@ const AplicationForm = () => {
 
     return (
 
-        <body className='bg-[#F4F5FB] font-IBM Plex Sans h-[40rem]' >
 
-            <div className='mx-1 rounded-md my-3 text-center text-white round-full bg-[#5C60F5]'>
+        <body className='bg-[#F4F5FB] font-IBM Plex Sans h-[50rem]' >
+            <NavBar />
+
+            <div className='mx-2 sm:flex rounded-md my-3 px-5 py-2 text-center text-white round-full bg-[#7478F7]'>
                 <h4 className='text-center text-white'>Announcement: </h4> Welcome QuizCompetition - 2023 Portal.</div>
             <label htmlFor="ragistration" className=' px-4 text-center text-2xl'> Registration </label>
             <div className='md:grid md:grid-flow-col '>
@@ -26,8 +29,8 @@ const AplicationForm = () => {
                     <div className='rounded-md shadow divide-y divide-solid bg-white py-2 px-2' >
                         <div className='py-2 text-lg'>Quick Links</div>
                         <div className='py-2 text-sm'>Mobile Number (Verified)
-                            <div className='py-2 text-sm px-2 text-[#5C60F5] '>Verify Email ID</div>
-                            <div className='py-2 text-sm px-2 text-[#5C60F5] '>Need Help?</div>
+                            <div className='py-2 text-sm px-2 text-[#7478F7] '>Verify Email ID</div>
+                            <div className='py-2 text-sm px-2 text-[#7478F7] '>Need Help?</div>
                         </div>
                     </div>
                 </div>
