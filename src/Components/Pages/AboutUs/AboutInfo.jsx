@@ -83,12 +83,12 @@ function AboutInfo() {
                 </div>
             </div>
 
-            {/* <div className='h-[14rem] flex items-center justify-center'>
+            <div className='h-[14rem] flex items-center justify-center'>
                 <div className=' border-2 border-red-600 bg-gradient-to-t from-red-300  to-gray-300  rounded-full text-center shadow-md shadow-red-500 flex flex-col justify-center gap-3 w-[300px] h-[100px] sm:w-[450px] sm:h-[100px] md:w-[40rem] md:h-[110px] xl:w-[50rem] xl:h-[130px]'>
                     <div className='uppercase text-[13px] sm:text-[15px] md:text-[18px]'>LATEST SAUNIDHI INFOTECH</div>
                     <div className='text-[20px] sm:text-[22px] md:text-[25px]'>News & media coverage</div>
                 </div>
-            </div> */}
+            </div>
 
             {/* <div className='card flex flex-col-reverse h-[18rem] my-5 gap-3 md:flex md:flex-row md:w-[100%] md:h-[20rem] md:gap-3 '>
 
