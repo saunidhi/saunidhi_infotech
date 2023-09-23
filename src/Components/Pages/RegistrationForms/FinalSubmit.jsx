@@ -256,7 +256,8 @@ const FinalSubmit = () => {
                         </div>
                         <div className='flex gap-2 border-t-2 my-5 py-3'>
                             <input type="checkbox" name="" id="" className='h-fit mt-4 ' />
-                            <span className='h-fit' style={{ lineHeight: "40px" }}> I hereby declare that I have filled up this online application after carefully reading the Information Bulletin and fully understanding the provisions/ procedures mentioned therein. I further declare that all the particulars given by me in this application are true to the best of my knowledge and belief. I agree that my Result may be withheld/ not declared/ my candidature may automatically stand cancelled, in case it is found at any point of time in future that false information has been furnished in this application. I shall abide by these terms and conditions as well as those laid down in the Information Bulletin, Public Notices and Advisories issued by saunidhi infotech Pvt. Ltd. regarding this exam from time to time.</span>
+                            <span className='h-fit' style={{ lineHeight: "40px" }}> I hereby declare that I have filled up this online application after carefully reading the Information Bulletin and fully understanding the provisions/ procedures mentioned therein. I further declare that all the particulars given by me in this application are true to the best of my knowledge and belief. I agree that my Result may be withheld/ not declared/ my candidature may automatically stand cancelled, in case it is found at any point of time in future that false information has been furnished in this application. I shall abide by these terms and conditions as well as those laid down in the Information Bulletin, Public Notices and Advisories issued by saunidhi infotech Pvt. Ltd. regarding this exam from time to time.
+                            </span>
                         </div>
                     </div>
 

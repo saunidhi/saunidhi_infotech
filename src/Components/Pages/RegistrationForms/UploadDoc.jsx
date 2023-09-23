@@ -63,7 +63,7 @@ const UploadDoc = () => {
             <div className=" flex flex-wrap ">
               <div className="w-full md:w-[50%]">
                 <h4 className=" text-neutral-800 text-xs font-normal leading-[21.12px] ">
-                  Candidate's Government issued ID{" "}
+                  CandidCandidate's Photograph (with 80% face without mask)
                 </h4>
                 <h5 className="text-indigo-500 text-xs font-normal leading-[21.12px] ">
                   Accepted formats .jpeg, .jpg
@@ -77,7 +77,7 @@ const UploadDoc = () => {
             <div className=" flex flex-wrap ">
               <div className="w-full md:w-[50%]">
                 <h4 className=" text-neutral-800 text-xs font-normal leading-[21.12px] ">
-                  Candidate's Government issued ID{" "}
+                  Candidate's Government issued ID
                 </h4>
                 <h5 className="text-indigo-500 text-xs font-normal leading-[21.12px] ">
                   Accepted formats .jpeg, .jpg
@@ -93,7 +93,7 @@ const UploadDoc = () => {
                   Candidate's Last year Marksheet
                 </h4>
                 <h5 className=" text-indigo-500 text-xs font-normal leading-[21.12px] ">
-                  Accepted formats .jpeg, .jpg{" "}
+                  Accepted formats .jpeg, .jpg
                 </h5>
               </div>
               <input type="file" name="" id="fileInput" onChange={validateFileType} />

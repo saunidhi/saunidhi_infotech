@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import BgImg from "./BgImg.svg"
 import { Context } from "./Utils/Context"
+import { Link } from "react-router-dom"
 
 function Mainfront() {
 
@@ -17,7 +18,7 @@ function Mainfront() {
           <p className="text-[18px] sm:text-[15px] md:text-[18px] xl:text-[20px] ">{setData}</p>
           {/* Button */}
           <div className="flex sm:h-[5rem] sm:top-4 sm:mb-5 xl:h-[10rem] justify-center items-center ">
-            <div className="bg-white text-black flex items-center justify-center w-[200px] h-[40px] rounded-[33px] mt-9 xl:w-[244px] xl:h-[55px] xl:text-xl uppercase font-semibold hover:bg-red-600 hover:text-white cursor-pointer" >Get a free quote</div>
+            <Link to="/contact" className="bg-white text-black flex items-center justify-center w-[200px] h-[40px] rounded-[33px] mt-9 xl:w-[244px] xl:h-[55px] xl:text-xl uppercase font-semibold hover:bg-red-600 hover:text-white cursor-pointer" >Get a free quote</Link>
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ function Banner() {
             "CardData": [
                 "> E-Sports Tournaments",
                 "> NFT Launchpads",
-                "> DeFi Staking Plateforms",
+                "> DeFi Staking Platforms",
                 "> NFT Development"
             ]
         },
