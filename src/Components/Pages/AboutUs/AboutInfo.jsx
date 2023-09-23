@@ -8,7 +8,7 @@ function AboutInfo() {
 
     const { About, AboutPageData } = useContext(Context);
     const BaseApi = About?.data[0]?.attributes;
-    
+
     useEffect(() => {
         AboutPageData();
     }, []);
@@ -18,9 +18,10 @@ function AboutInfo() {
             <div className=' p-2 flex flex-col gap-3 sm:w-[625px] md:mx-8 '>
                 <span className='text-2xl sm:text-3xl md:text-4xl py-4'>About Saunidhi InfoTech</span>
 
-                <p className='md:text-xl'>{BaseApi?.Paragraph_1}</p>
+                <p className='md:text-xl'>Saunidhi InfoTech is a global leader in business cloud software and AI products for companies in industry specific markets. Saunidhi Infotech builds complete industry suites in the cloud and efficiently deploys technology that puts the user experience first, leverages data science, and integrates easily into existing systems.</p>
 
-                <p className='md:text-xl'>{BaseApi?.Paragraph_2}</p>
+                <p className='md:text-xl'>Over 18000 organisations worldwide rely on Saunidhi InfoTech to help overcome market disruptions and achieve business-wide digital transformation.</p>
+
             </div>
 
             {/* overfilow problem */}
@@ -70,15 +71,16 @@ function AboutInfo() {
             <div className='md:h-[613px]' style={{ backgroundImage: `url(${BannerBg})`, backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%' }}>
                 <div className='flex text-white flex-wrap gap-6 py-4 md:gap-0 md:flex-nowrap md:pt-[7rem] xl:pt-[3rem]'>
                     <div className="flex flex-col px-3 gap-3 md:w-[40%] md:h-[100%] md:mx-auto xl:w-[40%]">
-                        <span className='uppercase'>{BaseApi?.work_place}</span>
-                        <span className='text-[22px] md:text-[25px] xl:text-[36px]'>{BaseApi?.work_place_heading}</span>
-                        <p className='xl:text-[24px] md:text-[18px]'>{BaseApi?.work_place_Paragraph}</p>
+                        <span className='uppercase'>WORKPLACE</span>
+                        <span className='text-[22px] md:text-[25px] xl:text-[36px]'>Culture of connexion</span>
+                        <p className='xl:text-[24px] md:text-[18px]'>We strive to be an awesome place to work. We believe that inclusion and diversity feed innovation. We cultivate an inclusive work environment, solicit and implement ideas from all employees, foster professional development and personal well-being, and encourage volunteerism in our communities. Our diverse and global workforce—with all our varied perspectives, identities, and backgrounds—leads Saunidhi InfoTech to brighter ideas and better business decisions.</p>
                     </div>
 
                     <div className="flex flex-col gap-2 px-3 md:w-[40%] md:mx-auto xl:w-[40%]">
-                        <span className='uppercase'>{BaseApi?.Careers}</span>
-                        <span className='text-[22px] md:text-[25px] xl:text-[36px]'>{BaseApi?.Careers_heading}</span>
-                        <p className='xl:text-[24px] md:text-[18px]'>{BaseApi?.Careers_Paragraph}</p>
+                        <span className='uppercase'>CAREERS</span>
+                        <span className='text-[22px] md:text-[25px] xl:text-[36px]'>Join our talented team
+                        </span>
+                        <p className='xl:text-[24px] md:text-[18px]'>At Saunidhi InfoTech you’ll work with some of the world’s most talented technologists, designers, support specialists, account reps, managers, and leaders. We recruit passionate people of integrity, and invest in in their success—because Saunidhi InfoTech</p>
                     </div>
                 </div>
             </div>

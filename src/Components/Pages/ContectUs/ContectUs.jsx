@@ -13,12 +13,12 @@ function ContectUs() {
     useEffect(() => {
         // eslint-disable-next-line
         ContactContent();
-        document.title="Saunidhi InfoTech Contact us"
+        document.title = "Saunidhi InfoTech Contact us"
     }, []);
 
     return (
         <>
-        <NavBar/>
+            <NavBar />
             {/* Navbar Background color */}
             <div className="hidden h-[4rem] bg-slate-800 md:h-[4rem] xl:h-[7rem]"></div>
 
@@ -26,9 +26,9 @@ function ContectUs() {
             <div className="h-[100%] bg-no-repeat w-[100%] md:h-[100%]">
                 <div style={{ backgroundImage: `url(${ContectUsBgImg})`, backgroundRepeat: 'no-repeat', backgroundSize: '101% 100%' }}>
                     <div className=' h-[60vh] flex flex-col justify-center px-4 gap-6 md:mx-20 '>
-                        <div className="text-xl md:text-2xl text-white">{BaseAPi?.Titile}</div>
-                        <div className='text-3xl md:text-4xl text-white'>{BaseAPi?.Heading_1}</div>
-                        <div className="text-[18px] py-2 text-white md:w-[40%]">{BaseAPi?.Paragraph}</div>
+                        <div className="text-xl md:text-2xl text-white">Contact Us</div>
+                        <div className='text-3xl md:text-4xl text-white'>Contact Saunidhi InfoTech</div>
+                        <div className="text-[18px] py-2 text-white md:w-[40%]">Whether you're looking to discuss a potential partnership, kick off a new implementation, or learn more about Saunidhi InfoTech products, we're here to help.</div>
                     </div>
 
                 </div>
