@@ -1,18 +1,13 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import ContectUsBgImg from "../ContectUs/ContectUsBgImg.png"
 import ContectUsInfo from './ContectUsInfo'
 import ContectUsForm from './ContectUsForm'
-import { Context } from '../../Utils/Context'
 import NavBar from '../../NavBar/NavBar'
 
 function ContectUs() {
 
-    const { ContactContent, ContactData } = useContext(Context);
-    const BaseAPi = ContactData?.data[0]?.attributes;
-
     useEffect(() => {
         // eslint-disable-next-line
-        ContactContent();
         document.title = "Saunidhi InfoTech Contact us"
     }, []);
 

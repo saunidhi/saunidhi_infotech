@@ -1,12 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
+import FormUrls from '../../FormLocation/FormUrls'
+import QuizHeader from '../../QuizBanner/QuizHeader'
 
 const Download = () => {
   return (
     <>
       <div className='sm:h-[40rem] h-[100vh]'>
+        <QuizHeader />
         <NavBar />
+        <FormUrls />
         <div className='flex'>
           <button className='bg-[#00CC88] mx-auto text-white px-4 py-3 my-1  items-center rounded-2xl '>Download / Print : Confirmation Page</button>
         </div>
@@ -29,7 +33,6 @@ const Download = () => {
                   <div className='py-2 text-sm'>Mobile Number (Verified)
                     <div className='py-2 text-sm  '>Verify Email ID (Verified) </div>
                   </div>
-
                   <div>
                     <div className='py-2 text-sm px-2 text-[#5C60F5] '>My Payments</div>
                     <div className='py-2 text-sm px-2 text-[#5C60F5] '>Need Help?</div>
@@ -57,14 +60,9 @@ const Download = () => {
             <div className=' flex flex-col items-center h-52 border-t-2 pb-4 '>
               <div className=' flex '><button className=' bg-[#00CC88] text-white mx-auto my-3 py-2  rounded-2xl px-4'  >Download / Print : Confirmation Page</button></div>
             </div>
-
           </div>
         </div>
-
       </div >
-
-
-
     </>
   )
 }

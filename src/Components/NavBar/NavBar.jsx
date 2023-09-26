@@ -41,8 +41,8 @@ function NavBar() {
             <div className='shadow-md w-full fixed top-0 left-0 z-10 '>
                 <div className='md:flex items-center justify-between bg-black py-[3px] md:px-10 px-2 '>
                     <div className='font-bold text-2xl cursor-pointer flex items-center text-white'>
-                        <Link to="/" onClick={Goto} className='text-3xl flex items-center '>
-                            <img src={amiInfotech} alt="" />
+                        <Link to="/" onClick={Goto} className='text-2xl sm:text-3xl md:text-4xl flex items-center '>
+                            <img className='h-11 sm:h-14' src={amiInfotech} alt="" />
                             Saunidhi Infotech
                         </Link>
                     </div>
@@ -51,7 +51,7 @@ function NavBar() {
                         <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
                     </div>
 
-                    <ul className={`uppercase md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-black text-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-14 ' : 'top-[-490px]'}`}>
+                    <ul className={`uppercase md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-black text-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-12 ' : 'top-[-490px]'}`}>
                         <li className='md:ml-8 text-xl md:my-0 my-7 group relative'>
                             <Link to="/" onClick={GotoService} className='text-white hover:text-gray-400 duration-500'>
                                 <button className="text-white hover:text-gray-400 uppercase duration-500 inline-flex items-center">

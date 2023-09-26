@@ -1,17 +1,7 @@
 import React from 'react'
 import BannerBg from './BannerBg.png'
-import { Context } from '../../Utils/Context'
-import { useContext } from 'react'
-import { useEffect } from 'react';
 
 function AboutInfo() {
-
-    const { About, AboutPageData } = useContext(Context);
-    const BaseApi = About?.data[0]?.attributes;
-
-    useEffect(() => {
-        AboutPageData();
-    }, []);
 
     return (
         <>

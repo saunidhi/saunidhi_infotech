@@ -1,22 +1,16 @@
 import React from 'react'
 import NavBar from './NavBar'
+import FormUrls from '../../FormLocation/FormUrls'
+import QuizHeader from '../../QuizBanner/QuizHeader'
+import Bottom from './Bottom'
 
 const EducationForm = () => {
     return (
         <>
+            <QuizHeader />
             <NavBar />
+            <FormUrls />
             <div className='drop-shadow-xl '>
-                <div className='text-[#525F7F] my-2'>
-                    <table>
-                        <tr>
-                            <td className='px-4 text-sm cursor-pointer' >Personal Details(1)   </td>
-                            <td className='px-4 text-sm cursor-pointer'>Education Details(2)   </td>
-                            <td className='px-4 text-sm cursor-pointer'>Upload Details(3)   </td>
-                            <td className='px-4 text-sm cursor-pointer'>Preview (4)   </td>
-                        </tr>
-                    </table>
-                </div>
-
                 <div className=' divide-y divide-solid my-4 mx-3'>
                     <h1 className='text-[#FF8C00] my-3 text-2xl'>Application Form : Educational Details</h1>
 
@@ -84,6 +78,7 @@ const EducationForm = () => {
                     </div>
                 </div>
             </div>
+            <Bottom />
         </>
     )
 }

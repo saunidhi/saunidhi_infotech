@@ -35,7 +35,7 @@ function ContectUsForm() {
 
           <div className='mt-3 ml-1'>
             <ReCAPTCHA
-              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+              sitekey="6Lf1P1AoAAAAAKYXj5ySNsbsYQxj-x4Tk41yJWJR"
               onChange={onChange}
             />
           </div>

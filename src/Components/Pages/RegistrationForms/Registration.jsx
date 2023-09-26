@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react'
 import NavBar from './NavBar'
+import QuizHeader from '../../QuizBanner/QuizHeader';
+import FormUrls from '../../FormLocation/FormUrls';
+import Bottom from './Bottom';
 
 function Registration() {
 
@@ -9,7 +12,9 @@ function Registration() {
 
     return (
         <>
+            <QuizHeader />
             <NavBar />
+            <FormUrls />
             <div className='bg-[#F4F5FB] md:grid md:grid-flow-col h-fit '>
                 <div className='bg-white w-[90%] mx-auto rounded-md space-y-2 p-2 h-fit mt-3 shadow md:col-span-1 md:sticky md:top-14'>
                     <h5 className='ml-2' >Form Status</h5>
@@ -173,8 +178,8 @@ function Registration() {
                     </form>
 
                 </div>
-
             </div>
+            <Bottom />
         </>
     )
 }

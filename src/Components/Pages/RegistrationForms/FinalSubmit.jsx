@@ -1,26 +1,29 @@
 import React from 'react'
 import NavBar from './NavBar';
 import { FaUser } from "react-icons/fa6";
-import { GrEdit } from "react-icons/gr";
-import { Link } from 'react-router-dom';
+import QuizHeader from '../../QuizBanner/QuizHeader';
+import FormUrls from '../../FormLocation/FormUrls';
+import Bottom from './Bottom';
 
 const FinalSubmit = () => {
     return (
         <>
+            <QuizHeader />
             <div className='bg-slate-100'>
                 <NavBar />
+                <FormUrls />
                 <div className='border-b-2 pb-5 md:w-[90%] mx-auto'>
-                    <label className='text-red-600 mx-5 text-xl '>Review Page : Online Application Form No. xxxxxxxxxx</label>
+                    <label className='text-red-600 mx-5 text-xl'>Review Page : Online Application Form No. xxxxxxxxxx</label>
                 </div>
 
                 <div className='h-fit py-5 mt-3 sm:px-4 md:w-[90%] mx-auto '>
-                    {/* show status , image or year */}
-                    <div className='grid grid-cols-3 items-center text-center py-2'>
+
+                    {/* show status , image */}
+                    <div className='grid grid-cols-2 items-center text-center py-2'>
                         <div className=' flex flex-col gap-2 float-left'>
                             <div>Application Status :</div>
                             <div className='bg-rose-500 rounded-lg px-2 py-1 w-fit mx-auto text-white'>Not Submited</div>
                         </div>
-                        <div> - 2023</div>
                         <div className='mx-auto border-2 rounded-md shadow-md'><FaUser size={150} /></div>
                     </div>
 
@@ -49,7 +52,6 @@ const FinalSubmit = () => {
                         {/* Personal Details Heading */}
                         <div className='flex items-center my-4 border-t-2 border-b-2'>
                             <div className="md:w-36 py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 ">Personal Details </div>
-                            <Link to="" className='bg-white p-2 rounded-md shadow'><GrEdit size={20} /></Link>
                         </div>
 
                         {/* Show candidate's name */}
@@ -95,8 +97,7 @@ const FinalSubmit = () => {
                     <div>
                         {/* Education Heading */}
                         <div className='flex items-center my-4 border-t-2 border-b-2'>
-                            <div className="md:w-36 py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 ">Personal Details </div>
-                            <Link to="" className='bg-white p-2 rounded-md shadow'><GrEdit size={20} /></Link>
+                            <div className="md:w-36 py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 ">Educational Details </div>
                         </div>
 
                         {/* Show Prevoius Education Details */}
@@ -131,7 +132,6 @@ const FinalSubmit = () => {
                         {/* Present Address */}
                         <div className='flex items-center my-4 border-t-2 '>
                             <div className="md:w-36 py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 ">Present Address</div>
-                            <Link to="" className='bg-white p-2 rounded-md shadow'><GrEdit size={20} /></Link>
                         </div>
 
                         {/* Show Country */}
@@ -183,7 +183,6 @@ const FinalSubmit = () => {
                         {/* Present Address */}
                         <div className='flex items-center my-4 border-t-2 gap-5'>
                             <div className="w-fit py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 ">Permanent Address</div>
-                            <Link to="" className='bg-white p-2 rounded-md shadow'><GrEdit size={20} /></Link>
                         </div>
 
 
@@ -225,7 +224,6 @@ const FinalSubmit = () => {
                         {/* Present Address */}
                         <div className='flex items-center my-4 border-t-2 gap-5'>
                             <div className="w-fit py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 ">Upload Scanned Files</div>
-                            <Link to="" className='bg-white p-2 rounded-md shadow'><GrEdit size={20} /></Link>
                         </div>
 
                         {/* Show Email Address*/}
@@ -241,27 +239,56 @@ const FinalSubmit = () => {
                             <span>Candidate's Last year Marksheet</span>
                             <span className='w-fit h-fit rounded-md py-1 px-2 bg-[#F4811F] hover:bg-red-500 text-lg text-white cursor-pointer'>View</span>
                         </div>
-
                     </div>
 
                     {/* show Particulars checklist to be verified Box */}
                     <div>
-                        {/* Present Address */}
-                        <div className='flex items-center my-4 border-t-2 gap-5 text-red-400'>
-                            <div className="w-fit py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 ">Upload Scanned Files</div>
+                        <div className='grid grid-cols-2 gap-14 sm:gap-40 border-t-2 my-5 py-3'>
+                            <div className="w-80 text-rose-500 text-xl font-normal font-['IBM Plex Sans'] leading-7">Particulars checklist to be verified</div>
                         </div>
-                        <div className='flex gap-2 border-t-2 my-5 py-3'>
+
+                        <div className='flex gap-2 my-5 '>
+                            <input type="checkbox" name="" id="" />
+                            <span>My name is xyz as per the Marksheet/Certificate.</span>
+                        </div>
+                        <div className='flex gap-2 my-5 '>
+                            <input type="checkbox" name="" id="" />
+                            <span>My Father's Name is xyz</span>
+                        </div>
+                        <div className='flex gap-2 my-5 '>
+                            <input type="checkbox" name="" id="" />
+                            <span>My Mother's Name is is xyz</span>
+                        </div>
+                        <div className='flex gap-2 my-5 '>
+                            <input type="checkbox" name="" id="" />
+                            <span>Gender xyz</span>
+                        </div>
+                        <div className='flex gap-2 my-5 '>
+                            <input type="checkbox" name="" id="" />
+                            <span>My School Name is xyz</span>
+                        </div>
+                        <div className='flex gap-2 my-5 '>
+                            <input type="checkbox" name="" id="" />
+                            <span>My District name is KJHJKJH</span>
+                        </div>
+                        <div className='flex gap-2 my-5 '>
+                            <input type="checkbox" name="" id="" />
+                            <span>My educational details are correct.</span>
+                        </div>
+
+                        <div className='flex gap-2 my-5 '>
                             <input type="checkbox" name="" id="" />
                             <span>I have read the Quiz guidelines and eligibility criteria and choose my examination accordingly.</span>
                         </div>
-                        <div className='flex gap-2 border-t-2 my-5 py-3'>
+
+                        <div className='flex gap-2 my-5'>
                             <input type="checkbox" name="" id="" className='h-fit mt-4 ' />
                             <span className='h-fit' style={{ lineHeight: "40px" }}> I hereby declare that I have filled up this online application after carefully reading the Information Bulletin and fully understanding the provisions/ procedures mentioned therein. I further declare that all the particulars given by me in this application are true to the best of my knowledge and belief. I agree that my Result may be withheld/ not declared/ my candidature may automatically stand cancelled, in case it is found at any point of time in future that false information has been furnished in this application. I shall abide by these terms and conditions as well as those laid down in the Information Bulletin, Public Notices and Advisories issued by saunidhi infotech Pvt. Ltd. regarding this exam from time to time.
                             </span>
                         </div>
                     </div>
 
-                    <div className='grid grid-cols-2'>
+                    <div className='flex flex-wrap sm:justify-between'>
                         <div className="w-56 h-12 text-white flex items-center justify-center cursor-pointer bg-gray-900 rounded-md shadow border border-gray-900">Update Application Form</div>
 
                         <div className="w-48 h-12 text-white flex items-center justify-center cursor-pointer bg-emerald-500 rounded-md shadow border border-emerald-500">Proceed to Final submit</div>
@@ -269,6 +296,7 @@ const FinalSubmit = () => {
 
                 </div>
             </div>
+            <Bottom/>
         </>
     )
 }

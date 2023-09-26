@@ -1,12 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './Components/Pages/Home.jsx'
-import PageNoteFound from './Components/Pages/PageNoteFound.jsx'
+import Home from './Components/Pages/Home.jsx';
+import PageNoteFound from './Components/Pages/PageNoteFound.jsx';
 import ContectUs from './Components/Pages/ContectUs/ContectUs.jsx';
 import MainFooter from './Components/Footer/MainFooter.jsx';
-import AboutUs from './Components/Pages/AboutUs/AboutUs.jsx'
+import AboutUs from './Components/Pages/AboutUs/AboutUs.jsx';
 import LogIn from './Components/Pages/LogIn/LogIn.jsx';
-// import SignUp from "./Components/Pages/SignUp/SignUp.jsx"
 import AppContext from './Components/Utils/Context.js';
 import Career from './Components/Pages/Careers/Career.jsx';
 import Healthcare from './Components/Pages/Healthcare/Healthcare.jsx';
@@ -15,9 +14,9 @@ import ForgetPassW from './Components/Pages/ForgetPassw/ForgetPassW.jsx';
 import Registration from './Components/Pages/RegistrationForms/Registration.jsx';
 import AplicationForm from './Components/Pages/RegistrationForms/AplicationForm.jsx';
 import Protective from './ProtectiveComponents/Protective.jsx';
-import RegistrationForms from './Components/Pages/RegistrationForms/EducationForm.jsx'
+import RegistrationForms from './Components/Pages/RegistrationForms/EducationForm.jsx';
 import UploadDoc from './Components/Pages/RegistrationForms/UploadDoc.jsx';
-import Download from './Components/Pages/RegistrationForms/Download.jsx'
+import Download from './Components/Pages/RegistrationForms/Download.jsx';
 import FinalSubmit from './Components/Pages/RegistrationForms/FinalSubmit.jsx';
 
 export default function App() {
@@ -44,9 +43,8 @@ export default function App() {
             <Route path='/uploadDocs' element={<UploadDoc />} />
             <Route path='/finalsubmit' element={<FinalSubmit />} />
 
-            {/* ############################# protect URLS ########################  */}
+            {/* ############################# protect URLS ######################## */}
             <Route path='/download' element={<Protective Comp={Download} />} />
-
             {/* ########################################################### */}
 
             {/* 404 page note PageNoteFound */}

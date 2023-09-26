@@ -1,6 +1,9 @@
 import React from 'react'
 import { useEffect } from 'react'
 import NavBar from './NavBar';
+import FormUrls from '../../FormLocation/FormUrls';
+import QuizHeader from '../../QuizBanner/QuizHeader';
+import Bottom from './Bottom';
 
 const AplicationForm = () => {
 
@@ -10,10 +13,10 @@ const AplicationForm = () => {
 
     return (
 
-
         <body className='bg-[#F4F5FB] font-IBM Plex Sans h-[50rem]' >
+            <QuizHeader />
             <NavBar />
-
+            <FormUrls />
             <div className='mx-2 sm:flex rounded-md my-3 px-5 py-2 text-center text-white round-full bg-[#7478F7]'>
                 <h4 className='text-center text-white'>Announcement: </h4> Welcome QuizCompetition - 2023 Portal.</div>
             <label htmlFor="ragistration" className=' px-4 text-center text-2xl'> Registration </label>
@@ -53,12 +56,7 @@ const AplicationForm = () => {
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
+            <Bottom/>
         </body>
 
     )

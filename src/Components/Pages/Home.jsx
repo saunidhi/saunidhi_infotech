@@ -12,11 +12,12 @@ import ProjectIdeaForm from "../ProjectIdeaForm";
 import { useEffect } from "react"
 import NavBar from "../NavBar/NavBar"
 
+
 function Home() {
 
     useEffect(() => {
         document.title = "Saunidhi InfoTech ";
-    })
+    });
 
     return (
         <>

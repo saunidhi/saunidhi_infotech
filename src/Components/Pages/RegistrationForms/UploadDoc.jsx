@@ -1,5 +1,9 @@
 import React from "react";
 import NavBar from "./NavBar";
+import { Link } from "react-router-dom";
+import FormUrls from "../../FormLocation/FormUrls";
+import QuizHeader from "../../QuizBanner/QuizHeader";
+import Bottom from "./Bottom";
 
 const UploadDoc = () => {
 
@@ -15,7 +19,9 @@ const UploadDoc = () => {
 
   return (
     <>
+      <QuizHeader />
       <NavBar />
+      <FormUrls />
       <div className="bg-[#F4F5FB] h-fit py-3 flex gap-3 md:flex-none">
         <div className="bg-white shadow rounded-xl w-[95%] md:w-[75%] mx-auto py-2 pl-1">
 
@@ -103,15 +109,15 @@ const UploadDoc = () => {
 
           {/* Button for Previous section */}
           <div className=" my-5 md:my-16 md:ml-10 md:flex md:justify-between">
-            <button className="w-[164px] h-[47px] bg-gray-900 rounded-md border border-gray-300 text-white my-2 md:my-0">
-              Previous Section
-            </button>
-            <button className="w-[242px] h-[47px] bg-emerald-500 rounded-md shadow border border-emerald-500 text-white mr-10">
+            <Link to="/RegistrationForm" className="w-[164px] text-center items-center h-[47px] bg-gray-900 rounded-xl border border-gray-300 text-white my-2 md:my-0">Previous Section</Link>
+
+            <Link to="/finalsubmit" className="w-[242px] h-[47px] text-center items-center bg-emerald-500 rounded-xl shadow border border-emerald-500 text-white mr-10">
               Proceed to Preview Section
-            </button>
+            </Link>
           </div>
         </div>
       </div>
+      <Bottom />
     </>
   );
 };
