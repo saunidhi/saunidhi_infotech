@@ -39,7 +39,7 @@ function projectIdeaForm() {
                             <input className='w-[100%] h-[100%]  p-2' style={{ backgroundColor: "#313533", }} type="text" />
                         </div>
                         <div className="border-2 rounded-md border-white  xl:w-[310px] h-[52px] mx-4 my-3">
-                            <label className='absolute mx-3 my-[-13px] z-1 bg px-2' style={{ backgroundColor: "#313533", }}>Linkedin-Telegram</label>
+                            <label className='absolute mx-3 my-[-13px] z-1 bg px-2' style={{ backgroundColor: "#313533", }}>Linkedin / Telegram</label>
                             <input className='w-[100%] h-[100%]  p-2' style={{ backgroundColor: "#313533", }} type="text" />
                         </div>
 
