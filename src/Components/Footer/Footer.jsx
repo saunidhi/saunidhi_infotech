@@ -1,5 +1,5 @@
 import React from 'react'
-import { LiaLinkedinIn, LiaTwitter, LiaInstagram, LiaFacebook, LiaYoutube } from "react-icons/lia";
+import { LiaLinkedinIn, LiaTwitter, LiaInstagram, LiaFacebook } from "react-icons/lia";
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -14,7 +14,7 @@ function Footer() {
                         <Link to="https://www.instagram.com/saunidhi_infotech" target="_blank" > <LiaInstagram size={30} /></Link>
                         <Link to="https://twitter.com/saunidhi46598" target="_blank"> <LiaTwitter size={30} /></Link>
                         <Link to="https://www.facebook.com/profile.php?id=100094149437188" target="_blank"> <LiaFacebook size={30}  /></Link>
-                        <Link to="https://www.linkedin.com/in/saunidhi-infotech-34b07b282" target="_blank" > <LiaLinkedinIn size={30} /></Link>
+                        <Link to="https://www.linkedin.com/company/saunidhi-infotech/" target="_blank" > <LiaLinkedinIn size={30} /></Link>
                         {/* <LiaYoutube size={30} /> */}
                     </div>
                 </span>

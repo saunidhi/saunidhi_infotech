@@ -20,7 +20,7 @@ function AddBanner() {
                         <div className="image mx-auto">
                             <img src={Suanidhi} alt="" />
                         </div>
-                        <div className="text-[18px] items-center">Suanidhiinfotech letest awards</div>
+                        <div className="text-[18px] items-center capitalize">Suanidhiinfotech latest awards</div>
                     </div>
                 </div>
                 
