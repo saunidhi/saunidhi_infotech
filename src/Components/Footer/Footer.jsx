@@ -13,7 +13,7 @@ function Footer() {
                     <div className="icons flex my-1">
                         <Link to="https://www.instagram.com/saunidhi_infotech" target="_blank" > <LiaInstagram size={30} /></Link>
                         <Link to="https://twitter.com/saunidhi46598" target="_blank"> <LiaTwitter size={30} /></Link>
-                        <Link to="https://www.facebook.com/profile.php?id=100094149437188" target="_blank"> <LiaFacebook size={30}  /></Link>
+                        <Link to="https://www.facebook.com/profile.php?id=61550696987273&mibextid=ZbWKwL" target="_blank"> <LiaFacebook size={30}  /></Link>
                         <Link to="https://www.linkedin.com/company/saunidhi-infotech/" target="_blank" > <LiaLinkedinIn size={30} /></Link>
                         {/* <LiaYoutube size={30} /> */}
                     </div>
