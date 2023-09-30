@@ -18,6 +18,8 @@ import RegistrationForms from './Components/Pages/RegistrationForms/EducationFor
 import UploadDoc from './Components/Pages/RegistrationForms/UploadDoc.jsx';
 import Download from './Components/Pages/RegistrationForms/Download.jsx';
 import FinalSubmit from './Components/Pages/RegistrationForms/FinalSubmit.jsx';
+import Onlineoffline from './Components/Pages/FormFillinngWay/Onlineoffline.jsx'
+import SemiOnline from './Components/Pages/RegistrationForms/SemiOnline.jsx';
 
 export default function App() {
 
@@ -37,11 +39,13 @@ export default function App() {
             <Route path="forget" element={< ForgetPassW />} />
 
             {/* ########################### Registration forms ################## */}
-            <Route path='/New-Registration' element={<Registration />} />
+            <Route path='/FillOnline' element={<Registration />} />
+            <Route path='/New-Registration' element={<Onlineoffline />} />
             <Route path='/AplicationForm' element={<AplicationForm />} />
             <Route path='/RegistrationForm' element={<RegistrationForms />} />
             <Route path='/uploadDocs' element={<UploadDoc />} />
             <Route path='/finalsubmit' element={<FinalSubmit />} />
+            <Route path='/SemiOnline' element={<SemiOnline />} />
 
             {/* ############################# protect URLS ######################## */}
             <Route path='/download' element={<Protective Comp={Download} />} />

@@ -25,6 +25,8 @@ function MainFooter() {
      ${location.pathname === "/AplicationForm" ? "hidden" : "block"}
      ${location.pathname === "/RegistrationForm" ? "hidden" : "block"}
      ${location.pathname === "/finalsubmit" ? "hidden" : "block"}
+     ${location.pathname === "/SemiOnline" ? "hidden" : "block"}
+     ${location.pathname === "/FillOnline" ? "hidden" : "block"}
       `}>
         <Bottom />
         <FooterBanner />
