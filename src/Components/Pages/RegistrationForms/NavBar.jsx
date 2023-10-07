@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import  Saunidhi_FAQ  from '../../../saunidhiFiles/Saunidhi_FAQ.pdf'
 
 const NavBar = () => {
 
@@ -15,13 +16,13 @@ const NavBar = () => {
                     <Link className='hover:bg-red-500 text-lg md:text-lg w-fit px-2 md:px-2 md:hover:px-2 md:rounded-md' to="/">Home</Link>
                     <Link className='hover:bg-red-500 text-lg md:text-lg w-fit px-2 md:px-2 md:hover:px-2 md:rounded-md' to="">Information Bulletin</Link>
                     <Link className='hover:bg-red-500 text-lg md:text-lg w-fit px-2 md:px-2 md:hover:px-2 md:rounded-md' to="">Application Guide</Link>
-                    <Link className='hover:bg-red-500 text-lg md:text-lg w-fit px-2 md:px-2 md:hover:px-2 md:rounded-md' to="">FAQ</Link>
+                    <a href={Saunidhi_FAQ} download="Saunidhi infotech Student FAQ " target='_blank' className='hover:bg-red-500 text-lg md:text-lg w-fit px-2 md:px-2 md:hover:px-2 md:rounded-md' to="">FAQ</a>
                     <Link className='hover:bg-red-500 text-lg md:text-lg w-fit px-2 md:px-2 md:hover:px-2 md:rounded-md' to="/contact">Contact Us</Link>
                 </div>
                 <Link to="/login" className='bg-orange-500 cursor-pointer float-right px-3 w-fit h-fit py-2 rounded-md my-1 mr-2'>
                     Sign in
                 </Link>
-            </nav>
+            </nav >
         </>
     )
 }

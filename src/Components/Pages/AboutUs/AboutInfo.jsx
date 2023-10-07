@@ -102,7 +102,7 @@ function AboutInfo() {
                         <span className='uppercase'>CAREERS</span>
                         <span className='text-[22px] md:text-[25px] xl:text-[36px]'>Join our talented team
                         </span>
-                        <p className='xl:text-[24px] md:text-[18px]'>At Saunidhi InfoTech you’ll work with some of the world’s most talented technologists, designers, support specialists, account reps, managers, and leaders. We recruit passionate people of integrity, and invest in in their success—because Saunidhi InfoTech</p>
+                        <p className='xl:text-[24px] md:text-[18px]'>At Saunidhi InfoTech you’ll work with some of the world’s most talented technologists, designers, support specialists, account reps, managers, and leaders. We recruit passionate people of integrity, and invest in in their success—because Saunidhi InfoTech’s future is driven by our people’s capabilities and commitment.</p>
                     </div>
                 </div>
             </div>

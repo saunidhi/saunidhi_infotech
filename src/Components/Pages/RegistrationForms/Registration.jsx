@@ -97,7 +97,7 @@ function Registration() {
                             <input type="text" className=' border shadow px-3 py-2 rounded-md md:col-span-4' />
                         </div>
                         <div className='grid grid-flow-row mx-3 md:grid-flow-col'>
-                            <p className='mx-1 text-sm w-fit md:col-span-1 sm:w-32'>sub-Locality</p>
+                            <p className='mx-1 text-sm w-fit md:col-span-1 sm:w-32'>Sub-Locality</p>
                             <input type="text" className=' border shadow px-3 py-2 rounded-md md:col-span-4' />
                         </div>
                         <div className='grid grid-flow-row mx-3 md:grid-flow-col'>

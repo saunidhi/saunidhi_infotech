@@ -300,7 +300,11 @@ const FinalSubmit = () => {
                         </div>
                         <div className='flex gap-2 my-5 '>
                             <input type="checkbox" name="" id="" />
-                            <span>Gender xyz</span>
+                            <span>My Date of Birth is 16-10-1997 </span>
+                        </div>
+                        <div className='flex gap-2 my-5 '>
+                            <input type="checkbox" name="" id="" />
+                            <span>My Gender is xyz</span>
                         </div>
                         <div className='flex gap-2 my-5 '>
                             <input type="checkbox" name="" id="" />
