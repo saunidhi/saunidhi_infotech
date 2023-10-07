@@ -51,7 +51,7 @@ const FinalSubmit = () => {
                     <div>
                         {/* Personal Details Heading */}
                         <div className='flex items-center my-4 border-t-2 border-b-2'>
-                            <div className="md:w-36 py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 ">Personal Details </div>
+                            <div className="md:w-36 py-3 text-lg font-normal font-['IBM Plex Sans'] leading-7 font-semibold">Personal Details </div>
                         </div>
 
                         {/* Show candidate's name */}
@@ -60,7 +60,7 @@ const FinalSubmit = () => {
                         {/* table */}
                         <div className='grid grid-cols-4 gap-10 md:gap-52 border-t-2 my-5 py-3'>
                             <span>Gender</span>
-                            <span>xyz </span>
+                            <span>Male</span>
                             <span>Candidate's Date of Birth</span>
                             <span>16-10-1997</span>
                         </div>
@@ -91,23 +91,33 @@ const FinalSubmit = () => {
                             <span>UTTAR PRADESH </span>
                         </div>
 
+                        {/* Show Domicile state */}
+                        <div className='grid grid-cols-4 gap-14 sm:gap-52 border-t-2 my-5 py-3'>
+                            <span>Identity Type</span>
+                            <span></span>
+                            <span>Identity Number</span>
+                            <span> </span>
+                        </div>
+
                     </div>
 
                     {/* show Education details Box */}
                     <div>
                         {/* Education Heading */}
                         <div className='flex items-center my-4 border-t-2 border-b-2'>
-                            <div className="md:w-36 py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 ">Educational Details </div>
+                            <div className="py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 font-semibold">Educational Details </div>
                         </div>
 
                         {/* Show Prevoius Education Details */}
-                        <div className='flex gap-14 sm:gap-40 text-lg'>
+                        <div className='flex gap-14 sm:gap-40 text-lg font-semibold'>
                             <span>Prevoius Education Details</span>
                         </div>
 
                         {/* Show Qualifying Exame */}
-                        <div className='flex gap-14 sm:gap-40 border-t-2 my-5 py-3'>
+                        <div className='grid grid-cols-4 gap-14 sm:gap-40 border-t-2 my-5 py-3'>
                             <span>Qualifying Exam</span>
+                            <span></span>
+                            <span>Result status</span>
                         </div>
 
                         {/* Show Passing Year */}
@@ -122,8 +132,37 @@ const FinalSubmit = () => {
                         <div className='grid grid-cols-4 gap-14 sm:gap-40 border-t-2 my-5 py-3'>
                             <span>School Address</span>
                             <span>xyz</span>
-                            <span>Sub Locality</span>
-                            <span>xyz</span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    {/* Current Educational Details */}
+
+                    <div>
+                        {/* Education Heading */}
+                        <div className='flex items-center my-4 border-t-2'>
+                            <div className="py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 font-semibold">Current Educational Details</div>
+                        </div>
+
+                        {/* Show Appearing Exam */}
+                        <div className='grid grid-cols-4 gap-14 sm:gap-40 border-t-2 my-5 py-3'>
+                            <span>Appearing Exam</span>
+                            <span></span>
+                            <span>Roll Number</span>
+                            <span></span>
+                        </div>
+
+                        {/* Show Name of school*/}
+                        <div className='grid grid-cols-4 gap-14 sm:gap-40 border-t-2 my-5 py-3'>
+                            <span>Name of School</span>
+                            <span></span>
+                        </div>
+
+                        {/* Show School Address  */}
+                        <div className='grid grid-cols-4 gap-14 sm:gap-40 border-t-2 my-5 py-3'>
+                            <span>School Address</span>
+                            <span></span>
                         </div>
                     </div>
 
@@ -131,7 +170,7 @@ const FinalSubmit = () => {
                     <div>
                         {/* Present Address */}
                         <div className='flex items-center my-4 border-t-2 '>
-                            <div className="md:w-36 py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 ">Present Address</div>
+                            <div className="md:w-36 py-3 text-lg font-normal font-['IBM Plex Sans'] leading-7 font-semibold">Present Address</div>
                         </div>
 
                         {/* Show Country */}
@@ -182,7 +221,7 @@ const FinalSubmit = () => {
                     <div>
                         {/* Present Address */}
                         <div className='flex items-center my-4 border-t-2 gap-5'>
-                            <div className="w-fit py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 ">Permanent Address</div>
+                            <div className="w-fit py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 font-semibold">Permanent Address</div>
                         </div>
 
 
@@ -223,7 +262,7 @@ const FinalSubmit = () => {
                     <div>
                         {/* Present Address */}
                         <div className='flex items-center my-4 border-t-2 gap-5'>
-                            <div className="w-fit py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 ">Upload Scanned Files</div>
+                            <div className="w-fit py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 font-semibold">Upload Scanned Files</div>
                         </div>
 
                         {/* Show Email Address*/}
@@ -296,7 +335,7 @@ const FinalSubmit = () => {
 
                 </div>
             </div>
-            <Bottom/>
+            <Bottom />
         </>
     )
 }

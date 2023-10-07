@@ -3,6 +3,7 @@ import NavBar from './NavBar'
 import FormUrls from '../../FormLocation/FormUrls'
 import QuizHeader from '../../QuizBanner/QuizHeader'
 import Bottom from './Bottom'
+import { Link } from 'react-router-dom'
 
 const EducationForm = () => {
     return (
@@ -70,7 +71,7 @@ const EducationForm = () => {
                             </div>
 
                             <div className='grid grid-cols-2 mx-auto sm:w-[50%]'>
-                                <div className='rounded-md cursor-pointer border-solid border-2 border-[#1F2021] px-3 py-1 mx-5 text-center'>back</div>
+                                <Link to="/FillOnline" className='rounded-md cursor-pointer border-solid border-2 border-[#1F2021] px-3 py-1 mx-5 text-center'>back</Link>
                                 <div className=' md:px-5 cursor-pointer rounded-md  bg-[#FE8E06] px-3 py-2 text-white text-center'>Save</div>
                             </div>
                         </form>

@@ -39,13 +39,13 @@ export default function App() {
             <Route path="forget" element={< ForgetPassW />} />
 
             {/* ########################### Registration forms ################## */}
-            <Route path='/FillOnline' element={<Registration />} />
             <Route path='/New-Registration' element={<Onlineoffline />} />
+            <Route path='/FillOnline' element={<Registration />} />
+            <Route path='/SemiOnline' element={<SemiOnline />} />
             <Route path='/AplicationForm' element={<AplicationForm />} />
             <Route path='/RegistrationForm' element={<RegistrationForms />} />
             <Route path='/uploadDocs' element={<UploadDoc />} />
             <Route path='/finalsubmit' element={<FinalSubmit />} />
-            <Route path='/SemiOnline' element={<SemiOnline />} />
 
             {/* ############################# protect URLS ######################## */}
             <Route path='/download' element={<Protective Comp={Download} />} />

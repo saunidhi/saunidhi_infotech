@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "./NavBar";
 import { Link } from "react-router-dom";
 import FormUrls from "../../FormLocation/FormUrls";
@@ -7,13 +7,41 @@ import Bottom from "./Bottom";
 
 const UploadDoc = () => {
 
-  const validateFileType = () => {
-    var selectedFile = document.getElementById('fileInput').files[0];
+  const [Preview, setPreview] = useState({ fileOne: '', fileSecand: '', fileThird: '' })
+
+  // const handleInput = (e) => {
+  //   const { name, value } = e.target;
+  //   setPreview({ ...Preview, [name]: value })
+  // }
+
+  const validateFileTypeOne = (e) => {
+    var selectedFile = document.getElementById('fileInputone').files[0];
+    var allowedTypes = ['image/jpeg', 'image/png'];
+    const { name, value } = e.target;
+    setPreview({ ...Preview, [name]: value })
+    if (!allowedTypes.includes(selectedFile.type)) {
+      alert('Invalid file type. Please upload a JPEG, PNG file.');
+      document.getElementById('fileInputone').value = '';
+    }
+  }
+
+  const validateFileTypeTwo = () => {
+    var selectedFile = document.getElementById('fileInputtwo').files[0];
     var allowedTypes = ['image/jpeg', 'image/png'];
 
     if (!allowedTypes.includes(selectedFile.type)) {
       alert('Invalid file type. Please upload a JPEG, PNG file.');
-      document.getElementById('fileInput').value = '';
+      document.getElementById('fileInputtwo').value = '';
+    }
+  }
+
+  const validateFileTypeThree = () => {
+    var selectedFile = document.getElementById('fileInputthree').files[0];
+    var allowedTypes = ['image/jpeg', 'image/png'];
+
+    if (!allowedTypes.includes(selectedFile.type)) {
+      alert('Invalid file type. Please upload a JPEG, PNG file.');
+      document.getElementById('fileInputthree').value = '';
     }
   }
 
@@ -75,9 +103,11 @@ const UploadDoc = () => {
                   Accepted formats .jpeg, .jpg
                 </h5>
               </div>
-              <input type="file" name="" id="fileInput" onChange={validateFileType} />
+              <input type="file" name="fileOne" id="fileInputone" value={Preview.fileOne} onChange={validateFileTypeOne} />
             </div>
-
+            {/* <div className="w-36 h-10">
+              <img className="h-fit w-fit" src={Preview.fileOne} alt={Preview.fileOne} />
+            </div> */}
 
             {/* file select two  */}
             <div className=" flex flex-wrap ">
@@ -89,7 +119,7 @@ const UploadDoc = () => {
                   Accepted formats .jpeg, .jpg
                 </h5>
               </div>
-              <input type="file" name="" id="fileInput" onChange={validateFileType} />
+              <input type="file" name="fileSecand" id="fileInputtwo" value={Preview.fileSecand} onChange={validateFileTypeTwo} />
             </div>
 
             {/* file select three  */}
@@ -102,7 +132,7 @@ const UploadDoc = () => {
                   Accepted formats .jpeg, .jpg
                 </h5>
               </div>
-              <input type="file" name="" id="fileInput" onChange={validateFileType} />
+              <input type="file" name="fileThird" id="fileInputthree" value={Preview.fileThird} onChange={validateFileTypeThree} />
             </div>
           </div>
           {/* ########################################################### */}
