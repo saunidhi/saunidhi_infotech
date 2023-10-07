@@ -108,9 +108,9 @@ const FinalSubmit = () => {
                             <div className="py-3 text-gray-900 text-lg font-normal font-['IBM Plex Sans'] leading-7 font-semibold">Educational Details </div>
                         </div>
 
-                        {/* Show Prevoius Education Details */}
+                        {/* Show previous Education Details */}
                         <div className='flex gap-14 sm:gap-40 text-lg font-semibold'>
-                            <span>Prevoius Education Details</span>
+                            <span>Previous Education Details</span>
                         </div>
 
                         {/* Show Qualifying Exame */}
