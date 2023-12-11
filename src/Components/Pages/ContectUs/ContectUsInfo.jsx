@@ -1,15 +1,6 @@
-import React, { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Context } from '../../Utils/Context';
 
 function ContectUsInfo() {
-
-  const { ContactContent, ContactData } = useContext(Context);
-  const BaseAPi = ContactData?.data[0]?.attributes;
-
-  useEffect(() => {
-    ContactContent();
-  }, []);
 
   return (
     <>
@@ -18,7 +9,7 @@ function ContectUsInfo() {
           <h1 className=" text-2xl py-2">INDIA Head Office</h1>
           <p className=' w-[230px] pb-5'>Agarsen Marg,<br /> Sonkh, Mathura, <br /> Uttar Pradesh - 281123</p>
           <h1 className=" text-2xl py-2">Headquarter</h1>
-          <p className=' w-[230px] '>Vasant Kunj,<br/>New Delhi,<br/>Delhi - 110067</p>
+          <p className=' w-[230px] '>Vasant Kunj,<br />New Delhi,<br />Delhi - 110067</p>
         </div>
 
         <div className='flex flex-col pt-5 md:pt-0'>
@@ -26,7 +17,7 @@ function ContectUsInfo() {
           <span>User groups are run and managed independently <br /> from Saunidhi InfoTech.</span>
           <div className="flex ">
             <span>Email:-</span>
-            <Link to={`mailto:${BaseAPi?.Email}`} className='text-blue-500 cursor-pointer'>{BaseAPi?.Email}</Link>
+            <Link to={`mailto:${""}`} className='text-blue-500 cursor-pointer'>{""}</Link>
           </div>
         </div>
       </div>

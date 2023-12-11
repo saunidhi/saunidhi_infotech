@@ -3,6 +3,7 @@ import ContectUsBgImg from "../ContectUs/ContectUsBgImg.png"
 import ContectUsInfo from './ContectUsInfo'
 import ContectUsForm from './ContectUsForm'
 import NavBar from '../../NavBar/NavBar'
+// import SuccessMsg from '../../Alerts/SuccessMsg'
 
 function ContectUs() {
 
@@ -16,6 +17,10 @@ function ContectUs() {
             <NavBar />
             {/* Navbar Background color */}
             <div className="hidden h-[4rem] bg-slate-800 md:h-[4rem] xl:h-[7rem]"></div>
+
+            <div className='absolute bottom-0 right-0'>
+                {/* <SuccessMsg /> */}
+            </div>
 
             {/* this tag for only image manage*/}
             <div className="h-[100%] bg-no-repeat w-[100%] md:h-[100%]">

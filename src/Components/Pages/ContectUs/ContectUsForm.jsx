@@ -1,10 +1,42 @@
-import React from 'react'
-import ReCAPTCHA from "react-google-recaptcha";
+import React, { useState } from 'react'
 
 function ContectUsForm() {
 
-  function onChange(value) {
-    console.log("Captcha value:", value);
+  const [ContactUs, setContactUs] = useState({
+    first_name: '',
+    last_name: '',
+    phone: '',
+    email_id: '',
+    company: '',
+    industry: '',
+    desc: ''
+  });
+
+  const handleInput = (e) => {
+    setContactUs({ ...ContactUs, [e.target.name]: e.target.value });
+  }
+
+  const Onsubmit = async (e) => {
+    e.preventDefault()
+
+    setContactUs({
+      first_name: "", last_name: "", phone: "", email_id: "", company: "", industry: "", desc: ""
+    })
+
+    const response = await fetch('https://saunidhi--saunidhiinfotec.repl.co/contact', {
+      method: 'POST',
+      body: JSON.stringify(ContactUs),
+    });
+
+   
+
+    if (response.status === 200) {
+      alert("your data successfuly send");
+    }
+    else {
+      alert();
+    }
+
   }
 
   return (
@@ -17,34 +49,32 @@ function ContectUsForm() {
 
         <span className=' md:mx-8 text-red-500'>* is required for submission</span>
 
-        <form action="" className='flex flex-col gap-1 md:mx-auto'>
-          <span>First Name *</span>
-          <input required className='w-[100%] h-[40px] border-2 border-gray-200  rounded-md pl-2 md:w-[400px]' name="first_name" type="text" />
-          <span>Last Name *</span>
-          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' name="last_name" type="text" />
-          <span>Business Email Address *</span>
-          <input type="email" required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' />
-          <span>Phone Number *</span>
-          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' name="phone" type="text" minLength="9" maxLength="10" size="10" />
-          <span>Company Name *</span>
-          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' name="company" type="text" />
-          <span>Industry *</span>
-          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' name="industry" type="text" />
-          <span>What would you like to discuss?</span>
-          <textarea className='w-[100%] h-[100px] border-2 border-gray-200 rounded-md pl-2 md:h-[130px] md:w-[400px]' name="desc" type="text" />
+        {/* ############################################### */}
+        {/* Contact us Form */}
+        {/* ############################################### */}
 
-          <div className='mt-3 ml-1'>
-            <ReCAPTCHA
-              sitekey="6Lf1P1AoAAAAAKYXj5ySNsbsYQxj-x4Tk41yJWJR"
-              onChange={onChange}
-            />
-          </div>
-          <div className='flex mt-3 text-white bg-blue-700 w-[100px] h-10 justify-center items-center rounded-lg hover:bg-blue-900 cursor-pointer'>Submit</div>
+        <form className='flex flex-col gap-1 md:mx-auto' onSubmit={Onsubmit}>
+          <span>First Name *</span>
+          <input required className='w-[100%] h-[40px] border-2 border-gray-200  rounded-md pl-2 md:w-[400px]' name="first_name" type="text" value={ContactUs.first_name} onChange={handleInput} />
+          <span>Last Name *</span>
+          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' name="last_name" type="text" value={ContactUs.last_name} onChange={handleInput} />
+          <span>Business Email Address *</span>
+          <input type="email" required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' name='email_id' value={ContactUs.email_id} onChange={handleInput} />
+          <span>Phone Number *</span>
+          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' name="phone" type="text" value={ContactUs.phone} minLength="9" maxLength="10" size="10" onChange={handleInput} />
+          <span>Company Name *</span>
+          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' name="company" type="text" value={ContactUs.company} onChange={handleInput} />
+          <span>Industry *</span>
+          <input required className='w-[100%] h-[40px] border-2 border-gray-200 rounded-md pl-2 md:w-[400px]' name="industry" type="text" value={ContactUs.industry} onChange={handleInput} />
+          <span>What would you like to discuss?</span>
+          <textarea className='w-[100%] h-[100px] border-2 border-gray-200 rounded-md pl-2 md:h-[130px] md:w-[400px]' name="desc" type="text" value={ContactUs.desc} onChange={handleInput} />
+
+          <button type='submit' className='flex mt-3 text-white bg-blue-700 w-[100px] h-10 justify-center items-center rounded-lg hover:bg-blue-900 cursor-pointer'>Submit</button>
         </form>
 
         <p className='pt-3 text-[12px] pb-5'>By clicking “Submit” you agree that Saunidhi InfoTech will process your personal data provided in the above form for communicating with you as our potential or actual customer or a client as described in our.</p>
-
       </div>
+
     </>
   )
 }

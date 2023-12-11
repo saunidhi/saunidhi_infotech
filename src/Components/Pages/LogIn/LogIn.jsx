@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import LoginBg from './LoginBg.png'
 import { FaUserAlt, FaLock } from 'react-icons/fa'
-import Fb from "./Fb.png"
-import Google from "./Google.png"
 import { Link, useNavigate } from 'react-router-dom'
 import headerimg from '../Registration/headerImg.png'
 import ReCAPTCHA from "react-google-recaptcha";
