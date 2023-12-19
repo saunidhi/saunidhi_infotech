@@ -23,7 +23,7 @@ function ContectUsForm() {
       first_name: "", last_name: "", phone: "", email_id: "", company: "", industry: "", desc: ""
     })
 
-    const response = await fetch('https://saunidhi--saunidhiinfotec.repl.co/contact', {
+    const response = await fetch('https://saunidhi-1.saunidhiinfotec.repl.co/contact', {
       method: 'POST',
       body: JSON.stringify(ContactUs),
     });
