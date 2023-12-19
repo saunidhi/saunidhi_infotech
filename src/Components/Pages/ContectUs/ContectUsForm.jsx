@@ -12,9 +12,10 @@ function ContectUsForm() {
     desc: ''
   });
 
-  const handleInput = (e) => {
+  const handleInput = async (e) => {
     setContactUs({ ...ContactUs, [e.target.name]: e.target.value });
   }
+
 
   const Onsubmit = async (e) => {
     e.preventDefault()
@@ -24,19 +25,19 @@ function ContectUsForm() {
     })
 
     const response = await fetch('https://saunidhi-1.saunidhiinfotec.repl.co/contact', {
+<<<<<<< HEAD
+=======
+      mode: 'no-cors',
+>>>>>>> d703680... connect all form with backend
       method: 'POST',
       body: JSON.stringify(ContactUs),
     });
-
-   
-
-    if (response.status === 200) {
-      alert("your data successfuly send");
+    if(response.status===0){
+      alert("Send request successfuly");
     }
-    else {
-      alert();
+    else{
+      alert({response})
     }
-
   }
 
   return (
