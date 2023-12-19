@@ -25,10 +25,7 @@ function ContectUsForm() {
     })
 
     const response = await fetch('https://saunidhi-1.saunidhiinfotec.repl.co/contact', {
-<<<<<<< HEAD
-=======
       mode: 'no-cors',
->>>>>>> d703680... connect all form with backend
       method: 'POST',
       body: JSON.stringify(ContactUs),
     });
