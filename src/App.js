@@ -53,10 +53,19 @@ export default function App() {
 
             {/* 404 page note PageNoteFound */}
             <Route path="*" element={<PageNoteFound />} />
+
+
           </Routes>
           <MainFooter />
         </AppContext>
       </BrowserRouter >
+      
+      {/* ads.txt file link */}
+      <footer>
+        <a href="/ads.txt" target="_blank" rel="noopener noreferrer">
+          View our ads.txt file
+        </a>
+      </footer>
     </>
   )
 }
