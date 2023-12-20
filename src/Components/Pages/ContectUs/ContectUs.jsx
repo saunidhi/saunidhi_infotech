@@ -3,11 +3,13 @@ import ContectUsBgImg from "../ContectUs/ContectUsBgImg.png"
 import ContectUsInfo from './ContectUsInfo'
 import ContectUsForm from './ContectUsForm'
 import NavBar from '../../NavBar/NavBar'
+import ReactGA from 'react-ga';
 // import SuccessMsg from '../../Alerts/SuccessMsg'
 
 function ContectUs() {
 
     useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search)
         // eslint-disable-next-line
         document.title = "Saunidhi InfoTech Contact us"
     }, []);

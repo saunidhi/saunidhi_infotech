@@ -3,11 +3,13 @@ import AboutUsBgImg from './AboutUsBgImg.png';
 import AboutInfo from './AboutInfo';
 import { useEffect } from 'react';
 import NavBar from '../../NavBar/NavBar';
+import ReactGA from 'react-ga';
 
 
 function AboutUs() {
 
   useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
     document.title = 'Saunidhi InfoTech About us';
   }, []);
 

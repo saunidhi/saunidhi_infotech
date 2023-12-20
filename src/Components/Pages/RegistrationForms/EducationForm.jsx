@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NavBar from './NavBar'
 import FormUrls from '../../FormLocation/FormUrls'
 import QuizHeader from '../../QuizBanner/QuizHeader'
 import Bottom from './Bottom'
 import { Link } from 'react-router-dom'
+import ReactGA from 'react-ga';
 
 const EducationForm = () => {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search)
+        document.title = "Education form ";
+    },[]);
+
     return (
         <>
             <QuizHeader />

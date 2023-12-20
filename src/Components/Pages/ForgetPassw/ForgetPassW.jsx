@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import ReactGA from 'react-ga';
 
 function ForgetPassW() {
 
@@ -22,6 +23,7 @@ function ForgetPassW() {
   }
 
   useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
     document.title = "Saunidhi InfoTech Forget Password"
   })
 

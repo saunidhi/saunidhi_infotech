@@ -3,10 +3,13 @@ import NavBar from './NavBar'
 import QuizHeader from '../../QuizBanner/QuizHeader';
 import FormUrls from '../../FormLocation/FormUrls';
 import Bottom from './Bottom';
+import ReactGA from 'react-ga';
+
 
 function Registration() {
 
     useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search)
         document.title = 'Saunidhi InfoTech Registration Form';
     }, []);
 

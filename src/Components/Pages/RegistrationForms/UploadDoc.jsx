@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import { Link } from "react-router-dom";
 import FormUrls from "../../FormLocation/FormUrls";
 import QuizHeader from "../../QuizBanner/QuizHeader";
 import Bottom from "./Bottom";
+import ReactGA from 'react-ga';
+
 
 const UploadDoc = () => {
 
@@ -13,6 +15,10 @@ const UploadDoc = () => {
   //   const { name, value } = e.target;
   //   setPreview({ ...Preview, [name]: value })
   // }
+  useEffect(()=>{
+    ReactGA.pageview(window.location.pathname + window.location.search)
+    document.title="upload documents "
+  },[])
 
   const validateFileTypeOne = (e) => {
     var selectedFile = document.getElementById('fileInputone').files[0];

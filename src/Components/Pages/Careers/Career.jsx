@@ -5,6 +5,7 @@ import WorkSubCard from './WorkSubCard'
 import Cumm from './Cumm.png'
 import Question from './Question.png'
 import Crausal from './Crausal'
+import ReactGA from 'react-ga';
 
 function Career() {
     const Goto = () => {
@@ -19,6 +20,7 @@ function Career() {
     }
 
     useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search)
         document.title = 'Career ';
     }, []);
 

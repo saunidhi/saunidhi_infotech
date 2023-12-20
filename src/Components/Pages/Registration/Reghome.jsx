@@ -3,10 +3,12 @@ import education from './education.png'
 import { Link } from 'react-router-dom';
 import Header from './Header'
 import Saunidhi_FAQ from '../../../saunidhiFiles/Saunidhi_FAQ.pdf'
+import ReactGA from 'react-ga';
 
 function Reghome() {
 
     useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search)
         document.title = "Saunidhi InfoTech Education";
     })
 

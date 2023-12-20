@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import ReactGA from 'react-ga';
 
 function PageNoteFound() {
 
   useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
     document.title = "404 Page Not Found";
-  })
+  }, [])
 
   return (
     <div>

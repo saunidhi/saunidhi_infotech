@@ -3,6 +3,7 @@ import HealthCareBgImg from './HealthCareImg.jpg'
 import BannerImg from './BannerImg.png'
 import ContectUs from './ContectUs'
 import NavBar from '../../NavBar/NavBar'
+import ReactGA from 'react-ga';
 
 function Front() {
     const myStyle = {
@@ -19,12 +20,13 @@ function Front() {
     }
 
     useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search)
         document.title = "Saunidhi InfoTech HealthCare";
     })
 
     return (
         <>
-        <NavBar/>
+            <NavBar />
             {/* Header Background Image */}
             <div className="Bgimge sm:flex sm:flex-col h-[50vh] sm:h-[30rem] sm:gap-5 md:h-[100%] xl:h-[80vh] bg-no-repeat image" style={{ backgroundImage: `url(${HealthCareBgImg})`, backgroundSize: '100% 100%' }}>
 

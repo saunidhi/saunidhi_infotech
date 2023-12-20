@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
 import FormUrls from '../../FormLocation/FormUrls'
 import QuizHeader from '../../QuizBanner/QuizHeader'
+import ReactGA from 'react-ga';
 
 const Download = () => {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+    document.title="final downloades"
+  }, [])
+
   return (
     <>
       <div className='sm:h-[40rem] h-[100vh]'>

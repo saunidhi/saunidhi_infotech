@@ -4,6 +4,7 @@ import { FaUserAlt, FaLock } from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
 import headerimg from '../Registration/headerImg.png'
 import ReCAPTCHA from "react-google-recaptcha";
+import ReactGA from 'react-ga';
 
 function LogIn() {
 
@@ -43,6 +44,7 @@ function LogIn() {
     }
 
     useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search)
         document.title = "Saunidhi InfoTech LogIn";
     })
 

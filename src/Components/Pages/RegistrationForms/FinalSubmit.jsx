@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NavBar from './NavBar';
 import { FaUser } from "react-icons/fa6";
 import QuizHeader from '../../QuizBanner/QuizHeader';
 import FormUrls from '../../FormLocation/FormUrls';
 import Bottom from './Bottom';
+import ReactGA from 'react-ga';
+
 
 const FinalSubmit = () => {
+
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search)
+        document.title = "Final submit"
+    }, [])
+
     return (
         <>
             <QuizHeader />

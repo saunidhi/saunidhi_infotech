@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Components/Pages/Home.jsx';
 import PageNoteFound from './Components/Pages/PageNoteFound.jsx';
@@ -20,8 +21,13 @@ import Download from './Components/Pages/RegistrationForms/Download.jsx';
 import FinalSubmit from './Components/Pages/RegistrationForms/FinalSubmit.jsx';
 import Onlineoffline from './Components/Pages/FormFillinngWay/Onlineoffline.jsx'
 import SemiOnline from './Components/Pages/RegistrationForms/SemiOnline.jsx';
+import ReactGA from 'react-ga';
 
 export default function App() {
+
+  useEffect(() => {
+    ReactGA.initialize('G-VB1ZSX32N1');
+  }, []);
 
   return (
     <>
@@ -59,7 +65,7 @@ export default function App() {
           <MainFooter />
         </AppContext>
       </BrowserRouter >
-      
+
       {/* ads.txt file link */}
       <footer>
         <a href="/ads.txt" target="_blank" rel="noopener noreferrer">

@@ -4,12 +4,14 @@ import NavBar from './NavBar';
 import FormUrls from '../../FormLocation/FormUrls';
 import QuizHeader from '../../QuizBanner/QuizHeader';
 import Bottom from './Bottom';
+import ReactGA from 'react-ga';
 
 const AplicationForm = () => {
 
     useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search)
         document.title = "Saunidhi InfoTech Registration Form";
-    });
+    },[]);
 
     return (
 

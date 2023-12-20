@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import QuizHeader from '../../QuizBanner/QuizHeader'
 import NavBar from '../RegistrationForms/NavBar'
 import Bottom from '../RegistrationForms/Bottom'
+import ReactGA from 'react-ga';
+
 
 const Onlineoffline = () => {
 
@@ -13,6 +15,7 @@ const Onlineoffline = () => {
   }
 
   useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
     document.title = 'Saunidhi InfoTech Online Registration Form';
   }, []);
 

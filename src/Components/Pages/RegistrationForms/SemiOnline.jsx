@@ -2,10 +2,11 @@ import React, { useEffect } from 'react'
 import QuizHeader from '../../QuizBanner/QuizHeader';
 import NavBar from './NavBar';
 import Bottom from './Bottom';
-
+import ReactGA from 'react-ga';
 function SemiOnline() {
 
     useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search)
         document.title = 'Saunidhi InfoTech SemiOnline Registration Form';
     }, []);
 
