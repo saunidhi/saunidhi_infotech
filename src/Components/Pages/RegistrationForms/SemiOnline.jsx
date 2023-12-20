@@ -3,6 +3,8 @@ import QuizHeader from '../../QuizBanner/QuizHeader';
 import NavBar from './NavBar';
 import Bottom from './Bottom';
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet';
+
 function SemiOnline() {
 
     useEffect(() => {
@@ -14,6 +16,20 @@ function SemiOnline() {
 
     return (
         <>
+
+            <Helmet>
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1ZSX32N1"></script>
+                <script>
+                    {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VB1ZSX32N1');
+          `}
+                </script>
+            </Helmet>
+
             <QuizHeader />
             <NavBar />
             <div className='bg-[#F4F5FB] md:grid md:grid-flow-col h-fit '>

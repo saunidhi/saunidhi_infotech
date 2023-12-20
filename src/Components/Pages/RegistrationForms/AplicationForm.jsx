@@ -5,6 +5,8 @@ import FormUrls from '../../FormLocation/FormUrls';
 import QuizHeader from '../../QuizBanner/QuizHeader';
 import Bottom from './Bottom';
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet';
+
 
 const AplicationForm = () => {
 
@@ -14,6 +16,20 @@ const AplicationForm = () => {
     },[]);
 
     return (
+
+        <>
+                    <Helmet>
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1ZSX32N1"></script>
+                <script>
+                    {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VB1ZSX32N1');
+          `}
+                </script>
+            </Helmet>
 
         <body className='bg-[#F4F5FB] font-IBM Plex Sans h-[50rem]' >
             <QuizHeader />
@@ -60,7 +76,7 @@ const AplicationForm = () => {
             </div>
             <Bottom/>
         </body>
-
+</>
     )
 }
 

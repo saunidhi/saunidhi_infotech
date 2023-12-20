@@ -4,16 +4,31 @@ import NavBar from './NavBar'
 import FormUrls from '../../FormLocation/FormUrls'
 import QuizHeader from '../../QuizBanner/QuizHeader'
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet'
 
 const Download = () => {
 
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search)
-    document.title="final downloades"
+    document.title = "final downloades"
   }, [])
 
   return (
     <>
+
+      <Helmet>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1ZSX32N1"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VB1ZSX32N1');
+          `}
+        </script>
+      </Helmet>
+
       <div className='sm:h-[40rem] h-[100vh]'>
         <QuizHeader />
         <NavBar />

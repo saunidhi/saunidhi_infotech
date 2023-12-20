@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from './Header'
 import Saunidhi_FAQ from '../../../saunidhiFiles/Saunidhi_FAQ.pdf'
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet';
 
 function Reghome() {
 
@@ -14,6 +15,19 @@ function Reghome() {
 
     return (
         <>
+            <Helmet>
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1ZSX32N1"></script>
+                <script>
+                    {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VB1ZSX32N1');
+          `}
+                </script>
+            </Helmet>
+
             {/* Header Background Image */}
             <div className="Bgimge sm:flex sm:flex-col h-[100vh] sm:h-[50rem] sm:gap-5 md:h-[50rem] xl:h-[50rem] bg-no-repeat image" style={{ backgroundImage: `url(${education})`, backgroundSize: '100% 100%' }} >
                 <div>

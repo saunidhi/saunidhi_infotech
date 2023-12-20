@@ -12,17 +12,35 @@ import ProjectIdeaForm from "../ProjectIdeaForm";
 import { useEffect } from "react"
 import NavBar from "../NavBar/NavBar"
 import ReactGA from 'react-ga';
-
+import { Helmet } from "react-helmet"
 
 function Home() {
-    
+
     useEffect(() => {
         ReactGA.pageview(window.location.pathname + window.location.search)
         document.title = "Saunidhi InfoTech ";
-    },[]);
+    }, []);
+
+
 
     return (
         <>
+            {/* This for google analytics */}
+            <Helmet>
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1ZSX32N1"></script>
+                <script>
+                    {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VB1ZSX32N1');
+          `}
+                </script>
+            </Helmet>
+            {/* ########################################### */}
+
+
             <NavBar />
             <Mainfront />
             <div id="Service">

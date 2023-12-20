@@ -5,7 +5,7 @@ import QuizHeader from '../../QuizBanner/QuizHeader'
 import NavBar from '../RegistrationForms/NavBar'
 import Bottom from '../RegistrationForms/Bottom'
 import ReactGA from 'react-ga';
-
+import { Helmet } from 'react-helmet'
 
 const Onlineoffline = () => {
 
@@ -21,6 +21,19 @@ const Onlineoffline = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1ZSX32N1"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VB1ZSX32N1');
+          `}
+        </script>
+      </Helmet>
+
       <QuizHeader />
       <NavBar />
       <div className='flex flex-col md:flex-row py-10 mx-auto w-fit' >

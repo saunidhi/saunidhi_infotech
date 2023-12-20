@@ -4,6 +4,8 @@ import ContectUsInfo from './ContectUsInfo'
 import ContectUsForm from './ContectUsForm'
 import NavBar from '../../NavBar/NavBar'
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet'
+
 // import SuccessMsg from '../../Alerts/SuccessMsg'
 
 function ContectUs() {
@@ -16,6 +18,21 @@ function ContectUs() {
 
     return (
         <>
+            {/* This for google analytics */}
+            <Helmet>
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1ZSX32N1"></script>
+                <script>
+                    {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VB1ZSX32N1');
+          `}
+                </script>
+            </Helmet>
+            {/* ########################################### */}
+
             <NavBar />
             {/* Navbar Background color */}
             <div className="hidden h-[4rem] bg-slate-800 md:h-[4rem] xl:h-[7rem]"></div>

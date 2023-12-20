@@ -5,7 +5,7 @@ import FormUrls from "../../FormLocation/FormUrls";
 import QuizHeader from "../../QuizBanner/QuizHeader";
 import Bottom from "./Bottom";
 import ReactGA from 'react-ga';
-
+import { Helmet } from "react-helmet";
 
 const UploadDoc = () => {
 
@@ -15,10 +15,10 @@ const UploadDoc = () => {
   //   const { name, value } = e.target;
   //   setPreview({ ...Preview, [name]: value })
   // }
-  useEffect(()=>{
+  useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search)
-    document.title="upload documents "
-  },[])
+    document.title = "upload documents "
+  }, [])
 
   const validateFileTypeOne = (e) => {
     var selectedFile = document.getElementById('fileInputone').files[0];
@@ -53,6 +53,20 @@ const UploadDoc = () => {
 
   return (
     <>
+
+      <Helmet>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1ZSX32N1"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VB1ZSX32N1');
+          `}
+        </script>
+      </Helmet>
+
       <QuizHeader />
       <NavBar />
       <FormUrls />

@@ -5,7 +5,7 @@ import QuizHeader from '../../QuizBanner/QuizHeader';
 import FormUrls from '../../FormLocation/FormUrls';
 import Bottom from './Bottom';
 import ReactGA from 'react-ga';
-
+import { Helmet } from 'react-helmet';
 
 const FinalSubmit = () => {
 
@@ -16,6 +16,20 @@ const FinalSubmit = () => {
 
     return (
         <>
+
+            <Helmet>
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1ZSX32N1"></script>
+                <script>
+                    {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VB1ZSX32N1');
+          `}
+                </script>
+            </Helmet>
+
             <QuizHeader />
             <div className='bg-slate-100'>
                 <NavBar />

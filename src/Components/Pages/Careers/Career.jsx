@@ -6,6 +6,7 @@ import Cumm from './Cumm.png'
 import Question from './Question.png'
 import Crausal from './Crausal'
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet'
 
 function Career() {
     const Goto = () => {
@@ -26,6 +27,21 @@ function Career() {
 
     return (
         <>
+
+            <Helmet>
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1ZSX32N1"></script>
+                <script>
+                    {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VB1ZSX32N1');
+          `}
+                </script>
+            </Helmet>
+            
+
             {/* Navbar Background color */}
             <div className="hidden h-[4rem] bg-slate-800 md:h-[4rem] xl:h-[7rem]"></div>
 

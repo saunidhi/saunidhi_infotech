@@ -4,6 +4,7 @@ import BannerImg from './BannerImg.png'
 import ContectUs from './ContectUs'
 import NavBar from '../../NavBar/NavBar'
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet'
 
 function Front() {
     const myStyle = {
@@ -26,6 +27,21 @@ function Front() {
 
     return (
         <>
+
+            <Helmet>
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1ZSX32N1"></script>
+                <script>
+                    {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VB1ZSX32N1');
+          `}
+                </script>
+            </Helmet>
+
+
             <NavBar />
             {/* Header Background Image */}
             <div className="Bgimge sm:flex sm:flex-col h-[50vh] sm:h-[30rem] sm:gap-5 md:h-[100%] xl:h-[80vh] bg-no-repeat image" style={{ backgroundImage: `url(${HealthCareBgImg})`, backgroundSize: '100% 100%' }}>

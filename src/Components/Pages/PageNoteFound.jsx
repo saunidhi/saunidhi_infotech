@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet';
 
 function PageNoteFound() {
 
@@ -11,6 +12,19 @@ function PageNoteFound() {
 
   return (
     <div>
+      <Helmet>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1ZSX32N1"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VB1ZSX32N1');
+          `}
+        </script>
+      </Helmet>
+      
       <main className="h-screen w-full flex flex-col justify-center items-center bg-slate-800">
         <h1 className="text-9xl font-extrabold text-white tracking-widest">404</h1>
         <div className="bg-[#FF6A3D] px-2 text-sm rounded rotate-12 absolute">

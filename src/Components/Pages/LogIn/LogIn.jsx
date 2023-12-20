@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import headerimg from '../Registration/headerImg.png'
 import ReCAPTCHA from "react-google-recaptcha";
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet'
 
 function LogIn() {
 
@@ -50,6 +51,20 @@ function LogIn() {
 
     return (
         <>
+
+            <Helmet>
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1ZSX32N1"></script>
+                <script>
+                    {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VB1ZSX32N1');
+          `}
+                </script>
+            </Helmet>
+
             <div className='w-full items-center h-14 flex md:h-16 md:w-[90%] md:mx-auto ' style={{ backgroundImage: `url(${headerimg})`, backgroundSize: '100% 100%' }}>
                 <div className='pl-2 text-[13px] md:text-[18px] md:ml-10 uppercase'>
                     <Link to="/" className='text-gray-800 text-lg hover:text-blue-500'>Home</Link>

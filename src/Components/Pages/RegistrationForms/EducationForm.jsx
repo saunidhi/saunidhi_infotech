@@ -5,15 +5,30 @@ import QuizHeader from '../../QuizBanner/QuizHeader'
 import Bottom from './Bottom'
 import { Link } from 'react-router-dom'
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet'
+
 
 const EducationForm = () => {
     useEffect(() => {
         ReactGA.pageview(window.location.pathname + window.location.search)
         document.title = "Education form ";
-    },[]);
+    }, []);
 
     return (
         <>
+            <Helmet>
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1ZSX32N1"></script>
+                <script>
+                    {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VB1ZSX32N1');
+          `}
+                </script>
+            </Helmet>
+            
             <QuizHeader />
             <NavBar />
             <FormUrls />
