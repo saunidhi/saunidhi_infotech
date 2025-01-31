@@ -68,7 +68,7 @@ export default function App() {
 
       {/* ads.txt file link */}
       <footer>
-        <a href="/ads.txt" target="_blank" rel="noopener noreferrer"></a>
+        {/* <a href="/ads.txt" target="_blank" rel="noopener noreferrer"></a> */}
       </footer>
     </>
   )
