@@ -1,6 +1,6 @@
 import React from 'react'
 import FacilityCardFirst from './FacilityCardFirst'
-import EducationInfo from './EducationInfo'
+{/*import EducationInfo from './EducationInfo' */}
 
 function MainfacilityCard() {
     return (
