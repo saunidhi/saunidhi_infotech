@@ -14,9 +14,9 @@ function ContectUsInfo() {
 
         <div className='flex flex-col pt-5 md:pt-0'>
           <h1 className=" text-2xl py-2">User groups</h1>
-          <span>User groups are run and managed independently <br /> from Saunidhi InfoTech.</span>
+          {/* ############################################### <span>User groups are run and managed independently <br /> from Saunidhi InfoTech.</span> */}
           <div className="flex ">
-            <span>Email:-</span>
+            {/* <span>Email:-</span> */}
             <Link to={`mailto:${""}`} className='text-blue-500 cursor-pointer'>{""}</Link>
           </div>
         </div>
